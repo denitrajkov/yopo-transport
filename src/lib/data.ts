@@ -263,31 +263,77 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+export type ValueIcon =
+  | "safety"
+  | "reliability"
+  | "commitment"
+  | "transparency"
+  | "technology"
+  | "standards"
+  | "positivity"
+  | "accountability"
+  | "improvement";
+
 export type ValueItem = {
+  icon: ValueIcon;
   title: string;
   description: string;
 };
 
 export const coreValues: ValueItem[] = [
   {
+    icon: "safety",
     title: "Safety First",
     description:
       "Every shipment is handled with rigorous attention to safety standards, from equipment checks to driver conduct on the road.",
   },
   {
+    icon: "reliability",
     title: "Reliability",
     description:
       "We build routes and schedules our customers can plan around, and we communicate early if anything changes.",
   },
   {
+    icon: "commitment",
     title: "Customer Commitment",
     description:
       "Your freight is treated as a priority, not a transaction. We aim to be a transportation partner you can count on long-term.",
   },
   {
+    icon: "transparency",
     title: "Transparency",
     description:
       "Clear pricing, honest timelines, and proactive updates — no surprises between quote and delivery.",
+  },
+  {
+    icon: "technology",
+    title: "Technology-Driven",
+    description:
+      "We invest in tools that give our team and customers better visibility, from live tracking to proactive status updates.",
+  },
+  {
+    icon: "standards",
+    title: "High Standards",
+    description:
+      "Every driver, vehicle, and process is held to a consistently high standard — not just when it's convenient.",
+  },
+  {
+    icon: "positivity",
+    title: "Positive Culture",
+    description:
+      "We build a workplace and partner experience defined by respect, positivity, and genuine care for the people we work with.",
+  },
+  {
+    icon: "accountability",
+    title: "Accountability",
+    description:
+      "When something doesn't go as planned, we own it, communicate quickly, and work to make it right.",
+  },
+  {
+    icon: "improvement",
+    title: "Continuous Improvement",
+    description:
+      "We regularly review our processes and listen to feedback to find better ways to serve our customers.",
   },
 ];
 

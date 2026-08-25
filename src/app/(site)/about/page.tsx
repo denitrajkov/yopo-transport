@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CTASection } from "@/components/CTASection";
+import { CoreValuesCarousel } from "@/components/CoreValuesCarousel";
 import { coreValues } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -116,20 +117,8 @@ export default function AboutPage() {
             title="Our core values"
             align="center"
           />
-          <div className="mt-14 grid gap-6 sm:grid-cols-2">
-            {coreValues.map((value) => (
-              <div
-                key={value.title}
-                className="rounded-2xl border border-navy-900/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-gold-500/30 hover:shadow-xl hover:shadow-navy-900/10"
-              >
-                <h3 className="font-display text-lg font-semibold text-navy-950">
-                  {value.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-navy-700">
-                  {value.description}
-                </p>
-              </div>
-            ))}
+          <div className="mt-14">
+            <CoreValuesCarousel values={coreValues} />
           </div>
         </div>
       </section>
