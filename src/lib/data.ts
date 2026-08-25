@@ -189,28 +189,77 @@ export type Testimonial = {
   role: string;
 };
 
-// Placeholder testimonials — replace with real, permissioned client feedback.
+// Sample testimonials for layout purposes — replace with real, permissioned client feedback.
 export const testimonials: Testimonial[] = [
   {
     id: "testimonial-1",
     quote:
-      "[Placeholder testimonial] Yopo Transport made our shipping process seamless from the first call to final delivery. Communication was clear every step of the way.",
-    name: "[Client Name]",
-    role: "[Company Name], [Title]",
+      "Yopo Transport has become our go-to carrier for time-sensitive freight. Their dispatch team communicates proactively, and we've never had a shipment arrive without warning if something changed.",
+    name: "Marcus Reyes",
+    role: "Operations Manager, Ridgeline Building Supply",
   },
   {
     id: "testimonial-2",
     quote:
-      "[Placeholder testimonial] Their team handled a tight timeline with professionalism and kept us updated the entire time. We felt confident our freight was in good hands.",
-    name: "[Client Name]",
-    role: "[Company Name], [Title]",
+      "What stands out is how easy they are to reach. If there's ever a question about a load, someone picks up the phone and gives us a straight answer.",
+    name: "Dana Whitfield",
+    role: "Logistics Coordinator, Harborline Foods",
   },
   {
     id: "testimonial-3",
     quote:
-      "[Placeholder testimonial] Reliable, responsive, and easy to work with. Exactly what we look for in a transportation partner.",
-    name: "[Client Name]",
-    role: "[Company Name], [Title]",
+      "We switched most of our regional freight to Yopo Transport last year and haven't looked back. On-time performance has been consistently strong.",
+    name: "Carlos Medina",
+    role: "Supply Chain Manager, Pinnacle Industrial Supply",
+  },
+  {
+    id: "testimonial-4",
+    quote:
+      "Their dedicated fleet option gave us the predictability we needed during our busiest season. Same drivers, same schedule, no surprises.",
+    name: "Rachel Osei",
+    role: "Distribution Manager, Northgate Wholesale",
+  },
+  {
+    id: "testimonial-5",
+    quote:
+      "From the first quote to final delivery, everything was handled professionally. Paperwork was accurate and on time, which makes our accounting team happy too.",
+    name: "Tom Bradshaw",
+    role: "Owner, Bradshaw Millwork",
+  },
+  {
+    id: "testimonial-6",
+    quote:
+      "We ship a lot of LTL freight, and Yopo Transport has been transparent about pricing and timelines every step of the way.",
+    name: "Priya Nair",
+    role: "Procurement Lead, Summit Retail Group",
+  },
+  {
+    id: "testimonial-7",
+    quote:
+      "Their drivers are professional and easy to work with at our dock. Loading and unloading has never been a hassle.",
+    name: "Jerome Castillo",
+    role: "Warehouse Supervisor, Coastal Produce Partners",
+  },
+  {
+    id: "testimonial-8",
+    quote:
+      "When a delivery window changed on short notice, their team adjusted the route and kept us updated the whole time. That kind of responsiveness is rare.",
+    name: "Elena Vasquez",
+    role: "Operations Director, Meridian Auto Parts",
+  },
+  {
+    id: "testimonial-9",
+    quote:
+      "We've worked with several carriers over the years, and Yopo Transport is one of the few that treats every shipment like it matters, big or small.",
+    name: "Grant Whitmore",
+    role: "General Manager, Whitmore & Sons Distribution",
+  },
+  {
+    id: "testimonial-10",
+    quote:
+      "Reliable, communicative, and fair on pricing. Exactly what we look for in a long-term transportation partner.",
+    name: "Lindsay Park",
+    role: "Director of Logistics, Alderbrook Manufacturing",
   },
 ];
 

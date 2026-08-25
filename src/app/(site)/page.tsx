@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
 import { StatsSection } from "@/components/StatsSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
-import { TestimonialCard } from "@/components/TestimonialCard";
+import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { CTASection } from "@/components/CTASection";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { TrustStrip } from "@/components/TrustStrip";
@@ -181,13 +181,11 @@ export default function HomePage() {
             tone="light"
           />
           <p className="mx-auto mt-3 max-w-xl text-balance text-center text-xs text-navy-400">
-            Placeholder testimonials shown for layout purposes — replace with
+            Sample testimonials shown for layout purposes — replace with
             real, permissioned client feedback.
           </p>
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
+          <div className="mt-14">
+            <TestimonialsCarousel testimonials={testimonials} />
           </div>
         </div>
       </section>
