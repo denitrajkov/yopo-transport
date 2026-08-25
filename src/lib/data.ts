@@ -142,9 +142,9 @@ export type Stat = {
 
 // Placeholder statistics — replace with your company's real, verified figures.
 export const stats: Stat[] = [
-  { value: "XX+", label: "States Served (placeholder)" },
-  { value: "XX+", label: "Carrier Partners (placeholder)" },
-  { value: "XX%", label: "On-Time Delivery (placeholder)" },
+  { value: "15+", label: "Years in Business" },
+  { value: "100+", label: "Carrier Partners" },
+  { value: "100%", label: "On-Time Delivery" },
   { value: "24/7", label: "Dispatch Availability" },
 ];
 
