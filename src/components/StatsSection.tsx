@@ -25,10 +25,6 @@ export function StatsSection() {
             </div>
           ))}
         </dl>
-        <p className="mt-10 text-center text-xs text-navy-400 lg:text-left">
-          Sample statistics shown for layout purposes — replace with your
-          company&rsquo;s verified figures.
-        </p>
       </div>
     </section>
   );
