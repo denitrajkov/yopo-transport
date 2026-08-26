@@ -350,7 +350,7 @@ export const coreValues: ValueItem[] = [
 ];
 
 export type TeamDepartment =
-  | "Leadership"
+  | "CEO"
   | "Dispatch"
   | "Safety & Compliance"
   | "Accounting & Finance"
@@ -359,7 +359,7 @@ export type TeamDepartment =
 
 // Display order for team departments on the Team page.
 export const teamDepartments: TeamDepartment[] = [
-  "Leadership",
+  "CEO",
   "Dispatch",
   "Safety & Compliance",
   "Accounting & Finance",
@@ -382,7 +382,7 @@ export const teamMembers: TeamMember[] = [
     id: "team-1",
     name: "[Full Name]",
     role: "[Chief Executive Officer]",
-    department: "Leadership",
+    department: "CEO",
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Oversees company strategy and operations, ensuring every customer receives dependable, high-quality service.",
@@ -391,7 +391,7 @@ export const teamMembers: TeamMember[] = [
     id: "team-2",
     name: "[Full Name]",
     role: "[Director of Operations]",
-    department: "Leadership",
+    department: "Dispatch",
     image:
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Manages day-to-day logistics operations, coordinating carriers and routes to keep freight moving on schedule.",
@@ -415,6 +415,33 @@ export const teamMembers: TeamMember[] = [
     bio: "[Placeholder bio] Plans routes and coordinates pickup and delivery windows across our carrier network.",
   },
   {
+    id: "team-9",
+    name: "[Full Name]",
+    role: "[Senior Dispatcher]",
+    department: "Dispatch",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Supports daily dispatch operations, matching loads to drivers and keeping routes on schedule.",
+  },
+  {
+    id: "team-10",
+    name: "[Full Name]",
+    role: "[Load Planner]",
+    department: "Dispatch",
+    image:
+      "https://images.unsplash.com/photo-1609436132311-e4b0c9370469?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Plans load sequencing and trailer capacity to keep every route efficient.",
+  },
+  {
+    id: "team-11",
+    name: "[Full Name]",
+    role: "[Dispatch Coordinator]",
+    department: "Dispatch",
+    image:
+      "https://images.unsplash.com/photo-1675869940341-d495d49010b5?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Coordinates driver check-ins and route updates throughout the day.",
+  },
+  {
     id: "team-3",
     name: "[Full Name]",
     role: "[Head of Fleet Safety]",
@@ -422,6 +449,24 @@ export const teamMembers: TeamMember[] = [
     image:
       "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Leads safety compliance and driver standards, keeping every shipment aligned with best practices.",
+  },
+  {
+    id: "team-12",
+    name: "[Full Name]",
+    role: "[Safety Coordinator]",
+    department: "Safety & Compliance",
+    image:
+      "https://images.unsplash.com/photo-1780732997580-df3992363434?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Supports driver safety training and monitors compliance across the fleet.",
+  },
+  {
+    id: "team-13",
+    name: "[Full Name]",
+    role: "[Compliance Specialist]",
+    department: "Safety & Compliance",
+    image:
+      "https://images.unsplash.com/photo-1609371497456-3a55a205d5eb?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Maintains DOT compliance records and prepares the fleet for inspections and audits.",
   },
   {
     id: "team-7",
@@ -433,6 +478,24 @@ export const teamMembers: TeamMember[] = [
     bio: "[Placeholder bio] Manages billing, carrier settlements, and day-to-day accounting to keep the business running smoothly.",
   },
   {
+    id: "team-14",
+    name: "[Full Name]",
+    role: "[Accounts Payable Specialist]",
+    department: "Accounting & Finance",
+    image:
+      "https://images.unsplash.com/photo-1573497491207-618cc224f243?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Manages vendor payments and carrier settlements to keep accounts current.",
+  },
+  {
+    id: "team-15",
+    name: "[Full Name]",
+    role: "[Billing Coordinator]",
+    department: "Accounting & Finance",
+    image:
+      "https://images.unsplash.com/photo-1758518729459-235dcaadc611?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Prepares customer invoices and resolves billing questions quickly and accurately.",
+  },
+  {
     id: "team-8",
     name: "[Full Name]",
     role: "[Fleet Maintenance Coordinator]",
@@ -442,6 +505,24 @@ export const teamMembers: TeamMember[] = [
     bio: "[Placeholder bio] Schedules preventive maintenance and repairs to keep every vehicle safe and on the road.",
   },
   {
+    id: "team-16",
+    name: "[Full Name]",
+    role: "[Lead Diesel Technician]",
+    department: "Maintenance",
+    image:
+      "https://images.unsplash.com/photo-1780733057909-e40d3f4c8cbe?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Leads hands-on repairs and inspections to keep the fleet safe and road-ready.",
+  },
+  {
+    id: "team-17",
+    name: "[Full Name]",
+    role: "[Maintenance Scheduler]",
+    department: "Maintenance",
+    image:
+      "https://images.unsplash.com/photo-1771898343647-bd979ad8cca5?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Schedules service appointments and tracks maintenance records for every vehicle.",
+  },
+  {
     id: "team-4",
     name: "[Full Name]",
     role: "[Customer Success Manager]",
@@ -449,6 +530,24 @@ export const teamMembers: TeamMember[] = [
     image:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Serves as the primary point of contact for clients, ensuring clear communication from quote to delivery.",
+  },
+  {
+    id: "team-18",
+    name: "[Full Name]",
+    role: "[Customer Service Representative]",
+    department: "Customer Service",
+    image:
+      "https://images.unsplash.com/photo-1780733058027-680a7c841fe5?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Answers customer questions and shares real-time shipment updates.",
+  },
+  {
+    id: "team-19",
+    name: "[Full Name]",
+    role: "[Client Relations Specialist]",
+    department: "Customer Service",
+    image:
+      "https://images.unsplash.com/photo-1580411415491-a672219c801b?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Builds long-term relationships with customers and helps resolve account issues.",
   },
 ];
 
