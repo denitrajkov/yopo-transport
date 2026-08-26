@@ -4,10 +4,10 @@ export const siteConfig = {
   description:
     "Yopo Transport delivers premium freight transportation and logistics solutions across the United States, built on reliability, safety, and dedicated service.",
   // Placeholder contact details — replace with real company information.
-  phone: "(555) 010-2024",
-  email: "dispatch@yopotransport.com",
+  phone: "+1 708 550 4407",
+  email: "contact@yopotransport.com",
   careersEmail: "careers@yopotransport.com",
-  address: "[Street Address], [City], [State] [ZIP]",
+  address: "15131 Kedzie Ave, Markham, IL 60248",
   hoursShort: "Mon–Fri, 7am–7pm CT",
 };
 
