@@ -31,7 +31,7 @@ export default function TeamPage() {
             Our Team
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            The people behind every shipment
+            The People Behind Every Shipment
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             From dispatch to delivery, our team is committed to moving your
@@ -44,7 +44,7 @@ export default function TeamPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Meet the Team"
-            title="Placeholder team profiles"
+            title="Placeholder Team Profiles"
             description="The profiles below are placeholders for layout purposes. Replace names, titles, bios, and photos with your real team once available."
             align="center"
           />

@@ -49,7 +49,7 @@ export default function AboutPage() {
             About Yopo Transport
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            A transportation company built on trust and attention to detail
+            A Transportation Company Built on Trust and Attention to Detail
           </h1>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Our Story"
-              title="Why we started Yopo Transport"
+              title="Why We Started Yopo Transport"
             />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-navy-700">
               <p>
@@ -114,7 +114,7 @@ export default function AboutPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="What We Stand For"
-            title="Our core values"
+            title="Our Core Values"
             align="center"
           />
           <div className="mt-14">
@@ -128,7 +128,7 @@ export default function AboutPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Our Commitment"
-            title="Safety, reliability, and customers — in that order"
+            title="Safety, Reliability, and Customers — in That Order"
             align="center"
           />
           <div className="mt-14 grid gap-8 lg:grid-cols-3">

@@ -18,7 +18,7 @@ export function CTASection() {
 
       <div className="container-page relative py-24 text-center sm:py-28">
         <h2 className="font-display text-balance text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
-          Ready to move your freight with a partner you can trust?
+          Ready to Move Your Freight With a Partner You Can Trust?
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
           Tell us about your shipment and our team will put together a

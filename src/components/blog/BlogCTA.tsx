@@ -9,7 +9,7 @@ export function BlogCTA() {
       />
       <div className="relative">
         <h2 className="font-display text-balance text-2xl font-semibold text-white sm:text-3xl">
-          Ready to take control of your fleet?
+          Ready to Take Control of Your Fleet?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-balance text-sm leading-relaxed text-navy-100/85 sm:text-base">
           Discover how our transportation technology can help you improve

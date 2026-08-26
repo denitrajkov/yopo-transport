@@ -82,7 +82,7 @@ export default function HomePage() {
           <div className="order-1 lg:order-2">
             <SectionHeading
               eyebrow="About Yopo Transport"
-              title="A transportation partner built around reliability"
+              title="A Transportation Partner Built Around Reliability"
               description="Yopo Transport was founded to bring a more attentive, professional standard to freight transportation — one where communication is clear, timelines are honored, and every shipment gets the attention it deserves."
             />
             <ul className="mt-8 space-y-4">
@@ -122,7 +122,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="What We Offer"
-            title="Transportation solutions for every shipment"
+            title="Transportation Solutions for Every Shipment"
             description="From single pallets to full trailers, our service lines are built to match the way your business ships."
             align="center"
           />
@@ -144,7 +144,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Why Choose Yopo Transport"
-            title="Freight handled the way it should be"
+            title="Freight Handled the Way It Should Be"
             description="We built our operation around the details that make freight transportation stressful — so you don't have to worry about them."
             align="center"
           />
@@ -161,7 +161,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="How It Works"
-            title="A simple, transparent process"
+            title="A Simple, Transparent Process"
             description="From your first request to final delivery, here's what working with Yopo Transport looks like."
             align="center"
           />
@@ -176,7 +176,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Client Feedback"
-            title="What our clients say"
+            title="What Our Clients Say"
             align="center"
             tone="light"
           />

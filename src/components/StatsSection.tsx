@@ -8,7 +8,7 @@ export function StatsSection() {
     >
       <div className="container-page py-16 sm:py-20">
         <h2 id="stats-heading" className="sr-only">
-          Company statistics
+          Company Statistics
         </h2>
         <dl className="grid grid-cols-2 gap-8 sm:gap-10 lg:grid-cols-4">
           {stats.map((stat) => (

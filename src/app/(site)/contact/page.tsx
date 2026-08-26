@@ -82,7 +82,7 @@ export default function ContactPage() {
 
             <div className="rounded-2xl bg-navy-950 p-7">
               <h2 className="font-display text-lg font-semibold text-white">
-                What happens next?
+                What Happens Next?
               </h2>
               <ol className="mt-5 space-y-3 text-sm text-navy-200">
                 <li>1. We review your shipment details.</li>

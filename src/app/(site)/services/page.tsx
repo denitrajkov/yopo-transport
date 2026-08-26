@@ -32,7 +32,7 @@ export default function ServicesPage() {
             Our Services
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Transportation solutions built around your freight
+            Transportation Solutions Built Around Your Freight
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             Whether you ship a single pallet or a full trailer, our service
@@ -56,7 +56,7 @@ export default function ServicesPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="How It Works"
-            title="Getting your freight moving is simple"
+            title="Getting Your Freight Moving Is Simple"
             align="center"
           />
           <div className="mt-14">
