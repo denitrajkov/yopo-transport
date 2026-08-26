@@ -72,8 +72,8 @@ export default function HomePage() {
         <div className="container-page grid items-center gap-14 lg:grid-cols-2">
           <div className="relative order-2 h-[420px] overflow-hidden rounded-3xl shadow-2xl shadow-navy-950/20 lg:order-1">
             <Image
-              src="https://images.unsplash.com/photo-1761133381018-aed5063d22fe?q=80&w=1600&auto=format&fit=crop"
-              alt="Aerial view of a freight truck on a highway between fields"
+              src="/images/yopo-truck.webp"
+              alt="Yopo Transport truck parked outside the company office"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
@@ -185,8 +185,8 @@ export default function HomePage() {
             tone="light"
           />
           <p className="mx-auto mt-3 max-w-xl text-balance text-center text-xs text-navy-400">
-            Sample testimonials shown for layout purposes — replace with
-            real, permissioned client feedback.
+            Sample testimonials shown for layout purposes — replace with real,
+            permissioned client feedback.
           </p>
           <div className="mt-14">
             <TestimonialsCarousel testimonials={testimonials} />
