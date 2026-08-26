@@ -102,7 +102,16 @@ export function Footer() {
             Contact
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-navy-300">
-            <li>{siteConfig.address}</li>
+            <li>
+              <a
+                href={siteConfig.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-gold-400"
+              >
+                {siteConfig.address}
+              </a>
+            </li>
             <li>
               <a
                 href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}
