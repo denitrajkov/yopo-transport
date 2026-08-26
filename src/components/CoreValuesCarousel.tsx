@@ -111,9 +111,9 @@ export function CoreValuesCarousel({ values }: { values: ValueItem[] }) {
 
   return (
     <div className="relative" onMouseEnter={stopAutoplay} onMouseLeave={startAutoplay}>
-      <div className="overflow-hidden">
+      <div className="-mt-2 overflow-hidden">
         <div
-          className="flex transition-transform duration-700 ease-out"
+          className="flex pt-2 transition-transform duration-700 ease-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
           aria-live="polite"
         >
