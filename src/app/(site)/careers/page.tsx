@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
 import { JobCard } from "@/components/careers/JobCard";
 import { getAllJobs } from "@/lib/careers";
@@ -39,6 +40,26 @@ export default function CareersPage() {
             We&rsquo;re growing our team of dispatchers, safety professionals,
             and operations staff who care about doing the job right.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-navy-950 py-14">
+        <div className="container-page flex flex-col items-center justify-between gap-6 rounded-3xl bg-white/[0.04] p-8 text-center sm:flex-row sm:text-left sm:p-10">
+          <div>
+            <h2 className="font-display text-xl font-semibold text-white">
+              Looking to Drive for Us?
+            </h2>
+            <p className="mt-2 max-w-lg text-sm leading-relaxed text-navy-200">
+              CDL drivers apply through our dedicated driver application —
+              submit your details and license to get started.
+            </p>
+          </div>
+          <Link
+            href="/become-a-driver"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
+          >
+            Become a Driver
+          </Link>
         </div>
       </section>
 

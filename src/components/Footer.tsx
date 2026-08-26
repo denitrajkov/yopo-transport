@@ -34,6 +34,14 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/become-a-driver"
+                className="text-sm text-navy-300 transition-colors hover:text-gold-400"
+              >
+                Become a Driver
+              </Link>
+            </li>
           </ul>
         </div>
 

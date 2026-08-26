@@ -73,12 +73,20 @@ export function Navbar() {
               );
             })}
           </ul>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-gold-500 px-6 py-2.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
-          >
-            Request a Quote
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/become-a-driver"
+              className="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:border-white/70 hover:bg-white/5"
+            >
+              Become a Driver
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full bg-gold-500 px-6 py-2.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
+            >
+              Request a Quote
+            </Link>
+          </div>
         </div>
 
         <button
@@ -143,6 +151,12 @@ export function Navbar() {
               className="mt-3 inline-flex items-center justify-center rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
             >
               Request a Quote
+            </Link>
+            <Link
+              href="/become-a-driver"
+              className="mt-2 inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/50"
+            >
+              Become a Driver
             </Link>
             <p className="mt-4 text-xs text-navy-300">
               {siteConfig.phone} &middot; {siteConfig.hoursShort}

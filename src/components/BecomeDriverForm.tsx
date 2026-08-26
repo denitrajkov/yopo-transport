@@ -1,0 +1,215 @@
+"use client";
+
+import { useState, type FormEvent } from "react";
+
+type Status = "idle" | "submitting" | "success" | "error";
+
+const inputStyles =
+  "w-full rounded-lg border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30";
+
+const labelStyles = "mb-1.5 block text-sm font-medium text-navy-900";
+
+const experienceOptions = [
+  "Less than 1 year",
+  "1–2 years",
+  "3–5 years",
+  "6–10 years",
+  "10+ years",
+];
+
+export function BecomeDriverForm() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("submitting");
+
+    const form = event.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      // TODO: Connect to an email service or backend API route, e.g.:
+      // await fetch("/api/driver-application", {
+      //   method: "POST",
+      //   body: new FormData(form),
+      // });
+      console.log("Driver application submitted (frontend-only placeholder):", data);
+      await new Promise((resolve) => setTimeout(resolve, 600));
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "success") {
+    return (
+      <div
+        role="status"
+        className="rounded-2xl border border-gold-500/30 bg-gold-50 p-8 text-center"
+      >
+        <h3 className="font-display text-xl font-semibold text-navy-950">
+          Application Received
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-navy-700">
+          Thank you for applying. This is a placeholder confirmation — connect
+          a backend or email service to deliver real applications to your
+          team.
+        </p>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="mt-6 inline-flex items-center justify-center rounded-full border border-navy-900/20 px-6 py-2.5 text-sm font-semibold text-navy-900 transition-colors hover:border-navy-900/40"
+        >
+          Submit another application
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+      <div className="grid gap-6 sm:grid-cols-2">
+        <div>
+          <label htmlFor="firstName" className={labelStyles}>
+            First Name<span className="text-gold-600"> *</span>
+          </label>
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            required
+            autoComplete="given-name"
+            className={inputStyles}
+            placeholder="Jane"
+          />
+        </div>
+        <div>
+          <label htmlFor="lastName" className={labelStyles}>
+            Last Name<span className="text-gold-600"> *</span>
+          </label>
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            required
+            autoComplete="family-name"
+            className={inputStyles}
+            placeholder="Smith"
+          />
+        </div>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2">
+        <div>
+          <label htmlFor="email" className={labelStyles}>
+            Email<span className="text-gold-600"> *</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autoComplete="email"
+            className={inputStyles}
+            placeholder="jane@example.com"
+          />
+        </div>
+        <div>
+          <label htmlFor="phone" className={labelStyles}>
+            Phone<span className="text-gold-600"> *</span>
+          </label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            autoComplete="tel"
+            className={inputStyles}
+            placeholder="(555) 010-2024"
+          />
+        </div>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2">
+        <div>
+          <label htmlFor="dateOfBirth" className={labelStyles}>
+            Date of Birth<span className="text-gold-600"> *</span>
+          </label>
+          <input
+            id="dateOfBirth"
+            name="dateOfBirth"
+            type="date"
+            required
+            autoComplete="bday"
+            className={inputStyles}
+          />
+        </div>
+        <div>
+          <label htmlFor="experience" className={labelStyles}>
+            Driving Experience<span className="text-gold-600"> *</span>
+          </label>
+          <select
+            id="experience"
+            name="experience"
+            required
+            defaultValue=""
+            className={inputStyles}
+          >
+            <option value="" disabled>
+              Select years of experience
+            </option>
+            {experienceOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="cdl" className={labelStyles}>
+          Upload CDL (PDF or Image)<span className="text-gold-600"> *</span>
+        </label>
+        <input
+          id="cdl"
+          name="cdl"
+          type="file"
+          required
+          accept=".pdf,image/*"
+          className="block w-full rounded-lg text-sm text-navy-600 file:mr-4 file:rounded-full file:border-0 file:bg-gold-500 file:px-5 file:py-2.5 file:text-sm file:font-semibold file:text-navy-950 file:transition-colors file:duration-200 hover:file:bg-gold-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/30"
+        />
+      </div>
+
+      <div className="flex items-start gap-3">
+        <input
+          id="consent"
+          name="consent"
+          type="checkbox"
+          required
+          className="mt-1 h-4 w-4 shrink-0 rounded border-navy-900/30 text-gold-500 focus:ring-2 focus:ring-gold-500/40"
+        />
+        <label htmlFor="consent" className="text-sm leading-relaxed text-navy-700">
+          I agree that Yopo Transport may collect and use the information
+          provided in this form to review my application.
+          <span className="text-gold-600"> *</span>
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        disabled={status === "submitting"}
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+      >
+        {status === "submitting" ? "Submitting..." : "Submit Application"}
+      </button>
+
+      {status === "error" ? (
+        <p role="alert" className="text-sm text-red-600">
+          Something went wrong. Please try again or contact us directly.
+        </p>
+      ) : null}
+    </form>
+  );
+}
