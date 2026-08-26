@@ -109,7 +109,7 @@ export default function HomePage() {
               ))}
             </ul>
             <div className="mt-9">
-              <Button href="/about" variant="ghost">
+              <Button href="/about" variant="gold-outline">
                 Learn More About Us
               </Button>
             </div>
