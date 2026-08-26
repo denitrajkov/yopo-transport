@@ -17,7 +17,7 @@ export const jobOpenings: JobOpening[] = [
     slug: "dispatcher",
     title: "Dispatcher",
     department: "Dispatch",
-    location: "On-site — [City], [State]",
+    location: "On-site — Negotino, Macedonia",
     employmentType: "Full-Time",
     postedDate: "2026-08-20",
     summary:
@@ -44,7 +44,7 @@ export const jobOpenings: JobOpening[] = [
     slug: "safety-coordinator",
     title: "Safety Coordinator",
     department: "Safety & Compliance",
-    location: "On-site — [City], [State]",
+    location: "On-site — Negotino, Macedonia",
     employmentType: "Full-Time",
     postedDate: "2026-08-12",
     summary:
@@ -71,7 +71,7 @@ export const jobOpenings: JobOpening[] = [
     slug: "staff-accountant",
     title: "Staff Accountant",
     department: "Accounting & Finance",
-    location: "On-site — [City], [State]",
+    location: "On-site — Negotino, Macedonia",
     employmentType: "Full-Time",
     postedDate: "2026-08-05",
     summary:
@@ -95,7 +95,7 @@ export const jobOpenings: JobOpening[] = [
     slug: "fleet-maintenance-coordinator",
     title: "Fleet Maintenance Coordinator",
     department: "Maintenance",
-    location: "On-site — [City], [State]",
+    location: "On-site — Negotino, Macedonia",
     employmentType: "Full-Time",
     postedDate: "2026-07-29",
     summary:
@@ -119,7 +119,7 @@ export const jobOpenings: JobOpening[] = [
     slug: "customer-service-representative",
     title: "Customer Service Representative",
     department: "Customer Service",
-    location: "On-site — [City], [State]",
+    location: "On-site — Negotino, Macedonia",
     employmentType: "Full-Time",
     postedDate: "2026-07-22",
     summary:
