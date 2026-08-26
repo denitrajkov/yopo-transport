@@ -6,6 +6,7 @@ export const siteConfig = {
   // Placeholder contact details — replace with real company information.
   phone: "(555) 010-2024",
   email: "dispatch@yopotransport.com",
+  careersEmail: "careers@yopotransport.com",
   address: "[Street Address], [City], [State] [ZIP]",
   hoursShort: "Mon–Fri, 7am–7pm CT",
 };
@@ -16,6 +17,7 @@ export const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/team", label: "Team" },
   { href: "/blog", label: "Blog" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
 

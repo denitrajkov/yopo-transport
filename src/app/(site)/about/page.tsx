@@ -64,22 +64,22 @@ export default function AboutPage() {
             />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-navy-700">
               <p>
-                Yopo Transport was founded on a simple belief: shipping
-                freight shouldn&rsquo;t mean losing visibility, sacrificing
-                communication, or wondering whether your delivery will
-                actually arrive on time.
+                Yopo Transport was founded on a simple belief: shipping freight
+                shouldn&rsquo;t mean losing visibility, sacrificing
+                communication, or wondering whether your delivery will actually
+                arrive on time.
               </p>
               <p>
-                We set out to build a transportation company that treats
-                every shipment — large or small — with the same level of
-                care and professionalism, backed by a team that answers the
-                phone and follows through on what it promises.
+                We set out to build a transportation company that treats every
+                shipment — large or small — with the same level of care and
+                professionalism, backed by a team that answers the phone and
+                follows through on what it promises.
               </p>
               <p>
-                {"[Placeholder]"} Today, we continue to grow our carrier
-                network and service offerings while staying focused on the
-                fundamentals: safety, reliability, and honest communication
-                with every customer we serve.
+                {"[Placeholder]"} Today, we continue to grow our carrier network
+                and service offerings while staying focused on the fundamentals:
+                safety, reliability, and honest communication with every
+                customer we serve.
               </p>
             </div>
           </div>
@@ -102,9 +102,8 @@ export default function AboutPage() {
             Our Mission
           </span>
           <p className="font-display text-balance text-2xl font-medium leading-relaxed text-white sm:text-3xl">
-            To move freight with precision and integrity, giving businesses a
-            transportation partner they can plan around and trust
-            completely.
+            To Move Freight With Precision And Integrity, Giving Businesses A
+            Transportation Partner They Can Plan Around And Trust Completely.
           </p>
         </div>
       </section>
@@ -124,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       {/* Safety / Reliability / Customer commitment */}
-      <section className="bg-white py-24 sm:py-28">
+      {/* <section className="bg-white py-24 sm:py-28">
         <div className="container-page">
           <SectionHeading
             eyebrow="Our Commitment"
@@ -148,7 +147,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CTASection />
     </>
