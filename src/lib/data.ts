@@ -349,10 +349,29 @@ export const coreValues: ValueItem[] = [
   },
 ];
 
+export type TeamDepartment =
+  | "Leadership"
+  | "Dispatch"
+  | "Safety & Compliance"
+  | "Accounting & Finance"
+  | "Maintenance"
+  | "Customer Service";
+
+// Display order for team departments on the Team page.
+export const teamDepartments: TeamDepartment[] = [
+  "Leadership",
+  "Dispatch",
+  "Safety & Compliance",
+  "Accounting & Finance",
+  "Maintenance",
+  "Customer Service",
+];
+
 export type TeamMember = {
   id: string;
   name: string;
   role: string;
+  department: TeamDepartment;
   image: string;
   bio: string;
 };
@@ -363,6 +382,7 @@ export const teamMembers: TeamMember[] = [
     id: "team-1",
     name: "[Full Name]",
     role: "[Chief Executive Officer]",
+    department: "Leadership",
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Oversees company strategy and operations, ensuring every customer receives dependable, high-quality service.",
@@ -371,41 +391,64 @@ export const teamMembers: TeamMember[] = [
     id: "team-2",
     name: "[Full Name]",
     role: "[Director of Operations]",
+    department: "Leadership",
     image:
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Manages day-to-day logistics operations, coordinating carriers and routes to keep freight moving on schedule.",
   },
   {
-    id: "team-3",
+    id: "team-6",
     name: "[Full Name]",
-    role: "[Head of Fleet Safety]",
+    role: "[Dispatch Lead]",
+    department: "Dispatch",
     image:
-      "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=800&auto=format&fit=crop",
-    bio: "[Placeholder bio] Leads safety compliance and driver standards, keeping every shipment aligned with best practices.",
-  },
-  {
-    id: "team-4",
-    name: "[Full Name]",
-    role: "[Customer Success Manager]",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
-    bio: "[Placeholder bio] Serves as the primary point of contact for clients, ensuring clear communication from quote to delivery.",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Coordinates real-time dispatch and driver communication to keep shipments on track.",
   },
   {
     id: "team-5",
     name: "[Full Name]",
     role: "[Logistics Coordinator]",
+    department: "Dispatch",
     image:
       "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
     bio: "[Placeholder bio] Plans routes and coordinates pickup and delivery windows across our carrier network.",
   },
   {
-    id: "team-6",
+    id: "team-3",
     name: "[Full Name]",
-    role: "[Dispatch Lead]",
+    role: "[Head of Fleet Safety]",
+    department: "Safety & Compliance",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-    bio: "[Placeholder bio] Coordinates real-time dispatch and driver communication to keep shipments on track.",
+      "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Leads safety compliance and driver standards, keeping every shipment aligned with best practices.",
+  },
+  {
+    id: "team-7",
+    name: "[Full Name]",
+    role: "[Staff Accountant]",
+    department: "Accounting & Finance",
+    image:
+      "https://images.unsplash.com/photo-1573497491765-dccce02b29df?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Manages billing, carrier settlements, and day-to-day accounting to keep the business running smoothly.",
+  },
+  {
+    id: "team-8",
+    name: "[Full Name]",
+    role: "[Fleet Maintenance Coordinator]",
+    department: "Maintenance",
+    image:
+      "https://images.unsplash.com/photo-1651684215020-f7a5b6610f23?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Schedules preventive maintenance and repairs to keep every vehicle safe and on the road.",
+  },
+  {
+    id: "team-4",
+    name: "[Full Name]",
+    role: "[Customer Success Manager]",
+    department: "Customer Service",
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+    bio: "[Placeholder bio] Serves as the primary point of contact for clients, ensuring clear communication from quote to delivery.",
   },
 ];
 

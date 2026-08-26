@@ -3,7 +3,7 @@ import Image from "next/image";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TeamCard } from "@/components/TeamCard";
 import { CTASection } from "@/components/CTASection";
-import { teamMembers } from "@/lib/data";
+import { teamDepartments, teamMembers } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Our Team",
@@ -48,10 +48,26 @@ export default function TeamPage() {
             description="The profiles below are placeholders for layout purposes. Replace names, titles, bios, and photos with your real team once available."
             align="center"
           />
-          <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-            {teamMembers.map((member) => (
-              <TeamCard key={member.id} member={member} />
-            ))}
+          <div className="mt-14 space-y-16">
+            {teamDepartments.map((department) => {
+              const members = teamMembers.filter(
+                (member) => member.department === department
+              );
+              if (members.length === 0) return null;
+
+              return (
+                <div key={department}>
+                  <h3 className="font-display text-xl font-semibold text-navy-950">
+                    {department}
+                  </h3>
+                  <div className="mt-6 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+                    {members.map((member) => (
+                      <TeamCard key={member.id} member={member} />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
