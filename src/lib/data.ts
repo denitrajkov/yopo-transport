@@ -11,6 +11,13 @@ export const siteConfig = {
   hoursShort: "Mon–Fri, 7am–7pm CT",
 };
 
+// Placeholder social links — replace with your real profile URLs.
+export const socialLinks = [
+  { name: "Facebook", href: "#" },
+  { name: "Instagram", href: "#" },
+  { name: "LinkedIn", href: "#" },
+];
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },

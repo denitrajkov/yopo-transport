@@ -1,5 +1,25 @@
 import Link from "next/link";
-import { navLinks, services, siteConfig } from "@/lib/data";
+import { navLinks, services, siteConfig, socialLinks } from "@/lib/data";
+
+const socialIcons: Record<string, React.ReactNode> = {
+  Facebook: (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden>
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z" />
+    </svg>
+  ),
+  Instagram: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-4 w-4" aria-hidden>
+      <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.2" cy="6.8" r="1.05" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  LinkedIn: (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden>
+      <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.45 20h-3.37v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V20h-3.37V8.5h3.24v1.57h.05c.45-.86 1.56-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.18V20z" />
+    </svg>
+  ),
+};
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -17,6 +37,20 @@ export function Footer() {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-300">
             {siteConfig.description}
           </p>
+          <div className="mt-6 flex items-center gap-3">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                aria-label={social.name}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-navy-300 transition-colors duration-200 hover:border-gold-500/50 hover:text-gold-400"
+              >
+                {socialIcons[social.name]}
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>
