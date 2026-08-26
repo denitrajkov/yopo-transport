@@ -140,8 +140,12 @@ export default function HomePage() {
       </section>
 
       {/* Why choose us */}
-      <section className="bg-white py-24 sm:py-28">
-        <div className="container-page">
+      <section className="relative overflow-hidden bg-white py-24 sm:py-28">
+        <div
+          aria-hidden
+          className="absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,_rgba(194,143,58,0.08),_transparent_65%)]"
+        />
+        <div className="container-page relative">
           <SectionHeading
             eyebrow="Why Choose Yopo Transport"
             title="Freight Handled the Way It Should Be"
