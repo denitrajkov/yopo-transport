@@ -132,7 +132,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-14 text-center">
-            <Button href="/services" variant="ghost">
+            <Button href="/services" variant="gold-outline">
               View All Services
             </Button>
           </div>
