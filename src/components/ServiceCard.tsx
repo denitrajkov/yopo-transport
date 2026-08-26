@@ -2,17 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Service } from "@/lib/data";
 
-export function ServiceCard({
-  service,
-  index,
-}: {
-  service: Service;
-  index: number;
-}) {
+export function ServiceCard({ service }: { service: Service }) {
   return (
     <article
       id={service.slug}
-      className="group relative flex scroll-mt-28 flex-col overflow-hidden rounded-2xl border border-navy-900/10 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-navy-900/15"
+      className="group relative flex scroll-mt-28 flex-col overflow-hidden rounded-2xl border border-gold-500/40 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-gold-500/70 hover:shadow-2xl hover:shadow-navy-900/15"
     >
       <div className="relative h-56 w-full overflow-hidden">
         <Image
@@ -23,9 +17,6 @@ export function ServiceCard({
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-navy-950/10 to-transparent" />
-        <span className="absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-xs font-semibold text-navy-900">
-          {String(index + 1).padStart(2, "0")}
-        </span>
       </div>
 
       <div className="flex flex-1 flex-col p-6 sm:p-7">

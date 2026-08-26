@@ -127,8 +127,8 @@ export default function HomePage() {
             align="center"
           />
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredServices.map((service, index) => (
-              <ServiceCard key={service.slug} service={service} index={index} />
+            {featuredServices.map((service) => (
+              <ServiceCard key={service.slug} service={service} />
             ))}
           </div>
           <div className="mt-14 text-center">
