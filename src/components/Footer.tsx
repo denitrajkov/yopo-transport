@@ -84,10 +84,8 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col items-center justify-between gap-4 py-6 text-xs text-navy-400 sm:flex-row">
-          <p>
-            &copy; {year} Yopo Transport. All rights reserved.
-          </p>
-          <p>Placeholder contact details — update with your company information.</p>
+          <p>&copy; {year} Yopo Transport. All rights reserved.</p>
+          <p>Designed by Yopo Development.</p>
         </div>
       </div>
     </footer>
