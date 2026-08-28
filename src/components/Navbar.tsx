@@ -50,7 +50,7 @@ export function Navbar() {
             width={140}
             height={140}
             priority
-            className="h-16 w-16 rounded-lg object-cover"
+            className="h-16 w-16 rounded-lg"
           />
         </Link>
 

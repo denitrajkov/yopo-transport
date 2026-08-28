@@ -58,7 +58,7 @@ export function Footer() {
               alt="Yopo Transport"
               width={112}
               height={112}
-              className="h-14 w-14 rounded-lg object-cover"
+              className="h-14 w-14 rounded-lg"
             />
             <span className="font-display text-xl font-semibold tracking-tight text-white">
               Yopo <span className="text-purple-400">Transport</span>
