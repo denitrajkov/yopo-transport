@@ -16,7 +16,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.yopotransport.com"),
+  metadataBase: new URL(siteConfig.siteUrl),
   title: {
     default: `${siteConfig.name} | Premium US Freight & Logistics`,
     template: `%s | ${siteConfig.name}`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} | Premium US Freight & Logistics`,
     description: siteConfig.description,
-    url: "https://www.yopotransport.com",
+    url: siteConfig.siteUrl,
     siteName: siteConfig.name,
     locale: "en_US",
     type: "website",

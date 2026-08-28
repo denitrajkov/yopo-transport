@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: "Yopo Transport",
+  siteUrl: "https://www.yopotransport.com",
   tagline: "Freight Moved With Precision",
   description:
     "Yopo Transport delivers premium freight transportation and logistics solutions across the United States, built on reliability, safety, and dedicated service.",
