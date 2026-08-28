@@ -52,9 +52,6 @@ export function Navbar() {
             priority
             className="h-11 w-11 rounded-lg object-cover"
           />
-          <span className="font-display text-xl font-semibold tracking-tight text-white">
-            Yopo <span className="text-purple-400">Transport</span>
-          </span>
         </Link>
 
         <div className="hidden items-center gap-10 lg:flex">
