@@ -389,8 +389,8 @@ export type TeamMember = {
 export const teamMembers: TeamMember[] = [
   {
     id: "team-1",
-    name: "[Full Name]",
-    role: "[Chief Executive Officer]",
+    name: "Goran Videnov",
+    role: "PRESIDENT & CEO",
     department: "CEO",
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
@@ -400,8 +400,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team-2",
-    name: "[Full Name]",
-    role: "[Director of Operations]",
+    name: "Antonio Andonov",
+    role: "Dispatch Lead",
     department: "Dispatch",
     image:
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop",
@@ -411,8 +411,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team-6",
-    name: "[Full Name]",
-    role: "[Dispatch Lead]",
+    name: "Martin Mitkovski",
+    role: "Dispatch Lead",
     department: "Dispatch",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
@@ -466,8 +466,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team-3",
-    name: "[Full Name]",
-    role: "[Head of Fleet Safety]",
+    name: "Larry Rickus",
+    role: "Safety Manager",
     department: "Safety & Compliance",
     image:
       "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=800&auto=format&fit=crop",
@@ -477,8 +477,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team-12",
-    name: "[Full Name]",
-    role: "[Safety Coordinator]",
+    name: "Angel Markov",
+    role: "Safety Coordinator",
     department: "Safety & Compliance",
     image:
       "https://images.unsplash.com/photo-1780732997580-df3992363434?q=80&w=800&auto=format&fit=crop",
@@ -488,8 +488,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team-13",
-    name: "[Full Name]",
-    role: "[Compliance Specialist]",
+    name: "Aleksandar Likarski",
+    role: "Safety Coordinator",
     department: "Safety & Compliance",
     image:
       "https://images.unsplash.com/photo-1609371497456-3a55a205d5eb?q=80&w=800&auto=format&fit=crop",
