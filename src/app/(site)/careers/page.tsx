@@ -30,7 +30,7 @@ export default function CareersPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
         </div>
         <div className="container-page relative">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
             Careers
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -56,7 +56,7 @@ export default function CareersPage() {
           </div>
           <Link
             href="/become-a-driver"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25"
           >
             Become a Driver
           </Link>

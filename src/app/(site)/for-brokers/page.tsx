@@ -107,7 +107,7 @@ export default function ForBrokersPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
         </div>
         <div className="container-page relative">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
             For Brokers
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -144,9 +144,9 @@ export default function ForBrokersPage() {
             {reasons.map((reason) => (
               <div
                 key={reason.title}
-                className="group rounded-2xl border border-gold-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-gold-500/70 hover:shadow-xl hover:shadow-navy-900/10"
+                className="group rounded-2xl border border-purple-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-gold-400 transition-colors duration-500 group-hover:bg-gold-500 group-hover:text-navy-950">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-purple-400 transition-colors duration-500 group-hover:bg-purple-500 group-hover:text-navy-950">
                   {reason.icon}
                 </div>
                 <h3 className="font-display mt-5 text-lg font-semibold text-navy-950">
@@ -165,7 +165,7 @@ export default function ForBrokersPage() {
       <section className="bg-navy-50 py-24 sm:py-28">
         <div className="container-page grid gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="rounded-2xl bg-navy-950 p-8 sm:p-10">
-            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">
+            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-purple-300">
               How It Works
             </span>
             <h2 className="font-display text-2xl font-semibold text-white">
@@ -174,7 +174,7 @@ export default function ForBrokersPage() {
             <ol className="mt-6 space-y-4">
               {bookingSteps.map((step, index) => (
                 <li key={step} className="flex items-start gap-4">
-                  <span className="font-display flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-500/15 text-sm font-semibold text-gold-400">
+                  <span className="font-display flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-purple-500/15 text-sm font-semibold text-purple-400">
                     {index + 1}
                   </span>
                   <span className="text-sm leading-relaxed text-navy-200">
@@ -186,7 +186,7 @@ export default function ForBrokersPage() {
           </div>
 
           <div className="rounded-2xl border border-navy-900/10 bg-white p-8 sm:p-10">
-            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-gold-600">
+            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-purple-600">
               Carrier Information
             </span>
             <h2 className="font-display text-2xl font-semibold text-navy-950">
@@ -229,7 +229,7 @@ export default function ForBrokersPage() {
             </Button>
             <a
               href={`mailto:${siteConfig.email}`}
-              className="inline-flex items-center justify-center rounded-full border-2 border-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-gold-600 transition-all duration-300 hover:bg-gold-500 hover:text-navy-950"
+              className="inline-flex items-center justify-center rounded-full border-2 border-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-purple-600 transition-all duration-300 hover:bg-purple-500 hover:text-navy-950"
             >
               {siteConfig.email}
             </a>

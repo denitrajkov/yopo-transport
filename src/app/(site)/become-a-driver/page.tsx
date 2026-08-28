@@ -18,7 +18,7 @@ export default function BecomeADriverPage() {
     <section className="bg-navy-50 pb-24 pt-36 sm:pb-28 sm:pt-40">
       <div className="container-page">
         <div className="max-w-2xl">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-600">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
             Become a Driver
           </span>
           <h1 className="font-display text-balance text-4xl font-semibold leading-tight text-navy-950 sm:text-5xl">
@@ -40,7 +40,7 @@ export default function BecomeADriverPage() {
               <ul className="mt-5 space-y-3">
                 {highlights.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-navy-700">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500" />
                     <span>{item}</span>
                   </li>
                 ))}

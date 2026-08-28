@@ -26,8 +26,8 @@ export function CategoryFilter({
             onClick={() => onChange(category)}
             className={`shrink-0 snap-start rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 ${
               isActive
-                ? "border-gold-500 bg-gold-500 text-navy-950"
-                : "border-navy-900/15 bg-white text-navy-700 hover:border-gold-500/50 hover:text-navy-950"
+                ? "border-purple-500 bg-purple-500 text-navy-950"
+                : "border-navy-900/15 bg-white text-navy-700 hover:border-purple-500/50 hover:text-navy-950"
             }`}
           >
             {category}

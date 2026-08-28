@@ -5,9 +5,9 @@ export function JobCard({ job }: { job: JobOpening }) {
   return (
     <Link
       href={`/careers/${job.slug}`}
-      className="group flex h-full flex-col rounded-2xl border border-navy-900/10 bg-white p-7 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-gold-500/30 hover:shadow-xl hover:shadow-navy-900/10"
+      className="group flex h-full flex-col rounded-2xl border border-navy-900/10 bg-white p-7 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/30 hover:shadow-xl hover:shadow-navy-900/10"
     >
-      <span className="inline-flex w-fit items-center rounded-full bg-gold-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-gold-700">
+      <span className="inline-flex w-fit items-center rounded-full bg-purple-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-purple-700">
         {job.department}
       </span>
 
@@ -26,7 +26,7 @@ export function JobCard({ job }: { job: JobOpening }) {
         <span>Posted {formatJobDate(job.postedDate)}</span>
       </div>
 
-      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors group-hover:text-gold-600">
+      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors group-hover:text-purple-600">
         View Details
         <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
           &rarr;

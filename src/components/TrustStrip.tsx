@@ -59,12 +59,12 @@ const badges: Badge[] = [
 
 export function TrustStrip() {
   return (
-    <div className="relative overflow-hidden border-y border-gold-500/15 bg-navy-900">
+    <div className="relative overflow-hidden border-y border-purple-500/15 bg-navy-900">
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(194,143,58,0.12),_transparent_65%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(131,85,184,0.12),_transparent_65%)]"
       />
-      <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
+      <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
 
       <div className="container-page relative">
         <div className="grid grid-cols-2 divide-x divide-y divide-white/10 lg:grid-cols-4 lg:divide-y-0">
@@ -73,7 +73,7 @@ export function TrustStrip() {
               key={badge.label}
               className="flex flex-col items-center gap-3 px-4 py-8 text-center sm:flex-row sm:justify-center sm:text-left"
             >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500/10 text-gold-400">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-purple-500/10 text-purple-400">
                 {badge.icon}
               </span>
               <span className="text-xs font-semibold uppercase tracking-[0.15em] text-navy-100">
@@ -84,7 +84,7 @@ export function TrustStrip() {
         </div>
       </div>
 
-      <div aria-hidden className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
+      <div aria-hidden className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
     </div>
   );
 }

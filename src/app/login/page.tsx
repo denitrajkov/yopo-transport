@@ -46,7 +46,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="text-center">
           <p className="font-display text-2xl font-semibold tracking-tight text-white">
-            Yopo <span className="text-gold-400">Transport</span>
+            Yopo <span className="text-purple-400">Transport</span>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-navy-300">
             This site is password protected. Enter the password to continue.
@@ -69,7 +69,7 @@ export default function LoginPage() {
               onChange={handleChange}
               placeholder="Enter password"
               aria-invalid={error ? "true" : undefined}
-              className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-center text-sm text-white placeholder:text-navy-400 transition-colors duration-200 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30"
+              className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-center text-sm text-white placeholder:text-navy-400 transition-colors duration-200 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/30"
             />
           </div>
 
@@ -82,7 +82,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25 disabled:cursor-not-allowed disabled:opacity-60"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25 disabled:cursor-not-allowed disabled:opacity-60"
           >
             {isSubmitting ? "Checking..." : "Enter"}
           </button>

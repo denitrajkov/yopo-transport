@@ -94,7 +94,7 @@ export default function ForShippersPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
         </div>
         <div className="container-page relative">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
             For Shippers
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -128,9 +128,9 @@ export default function ForShippersPage() {
             {reasons.map((reason) => (
               <div
                 key={reason.title}
-                className="group rounded-2xl border border-gold-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-gold-500/70 hover:shadow-xl hover:shadow-navy-900/10"
+                className="group rounded-2xl border border-purple-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-gold-400 transition-colors duration-500 group-hover:bg-gold-500 group-hover:text-navy-950">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-purple-400 transition-colors duration-500 group-hover:bg-purple-500 group-hover:text-navy-950">
                   {reason.icon}
                 </div>
                 <h3 className="font-display mt-5 text-lg font-semibold text-navy-950">
@@ -170,7 +170,7 @@ export default function ForShippersPage() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Button href="/services" variant="gold-outline">
+            <Button href="/services" variant="purple-outline">
               View All Services
             </Button>
           </div>

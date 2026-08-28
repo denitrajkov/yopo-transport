@@ -81,7 +81,7 @@ export function TestimonialsCarousel({
             type="button"
             onClick={() => goTo(index - 1)}
             aria-label="Previous testimonials"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-white transition-colors duration-200 hover:border-gold-500 hover:text-gold-400"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-white transition-colors duration-200 hover:border-purple-500 hover:text-purple-400"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-4 w-4" aria-hidden>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 5l-7 7 7 7" />
@@ -97,7 +97,7 @@ export function TestimonialsCarousel({
                 aria-label={`Go to testimonials page ${i + 1} of ${pages.length}`}
                 aria-current={i === index}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  i === index ? "w-6 bg-gold-500" : "w-2 bg-white/20 hover:bg-white/40"
+                  i === index ? "w-6 bg-purple-500" : "w-2 bg-white/20 hover:bg-white/40"
                 }`}
               />
             ))}
@@ -107,7 +107,7 @@ export function TestimonialsCarousel({
             type="button"
             onClick={() => goTo(index + 1)}
             aria-label="Next testimonials"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-white transition-colors duration-200 hover:border-gold-500 hover:text-gold-400"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-white transition-colors duration-200 hover:border-purple-500 hover:text-purple-400"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-4 w-4" aria-hidden>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

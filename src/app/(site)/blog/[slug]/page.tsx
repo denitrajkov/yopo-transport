@@ -71,13 +71,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <nav aria-label="Breadcrumb" className="text-xs text-navy-500">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/" className="transition-colors hover:text-gold-600">
+                <Link href="/" className="transition-colors hover:text-purple-600">
                   Home
                 </Link>
               </li>
               <li aria-hidden>/</li>
               <li>
-                <Link href="/blog" className="transition-colors hover:text-gold-600">
+                <Link href="/blog" className="transition-colors hover:text-purple-600">
                   Blog
                 </Link>
               </li>
@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </ol>
           </nav>
 
-          <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">
+          <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-purple-600">
             {post.category}
           </span>
           <h1 className="font-display text-balance mt-3 max-w-3xl text-3xl font-semibold leading-tight text-navy-950 sm:text-4xl lg:text-5xl">

@@ -5,7 +5,7 @@ export function BlogCTA() {
     <section className="relative overflow-hidden rounded-3xl bg-navy-950 px-8 py-14 text-center sm:px-12 sm:py-16">
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(194,143,58,0.18),_transparent_60%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(131,85,184,0.18),_transparent_60%)]"
       />
       <div className="relative">
         <h2 className="font-display text-balance text-2xl font-semibold text-white sm:text-3xl">

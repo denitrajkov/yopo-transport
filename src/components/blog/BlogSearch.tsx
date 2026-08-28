@@ -26,7 +26,7 @@ export function BlogSearch({ value, onChange }: BlogSearchProps) {
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder="Search articles..."
-        className="w-full rounded-full border border-navy-900/15 bg-white py-2.5 pl-10 pr-4 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30"
+        className="w-full rounded-full border border-navy-900/15 bg-white py-2.5 pl-10 pr-4 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/30"
       />
     </div>
   );

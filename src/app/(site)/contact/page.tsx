@@ -37,7 +37,7 @@ export default function ContactPage() {
       <section className="bg-navy-50 pb-24 pt-36 sm:pb-28 sm:pt-40">
         <div className="container-page">
           <div className="max-w-2xl">
-            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-600">
+            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
               Contact Us
             </span>
             <h1 className="font-display text-balance text-4xl font-semibold leading-tight text-navy-950 sm:text-5xl">
@@ -68,7 +68,7 @@ export default function ContactPage() {
                             href={detail.href}
                             target={detail.newTab ? "_blank" : undefined}
                             rel={detail.newTab ? "noopener noreferrer" : undefined}
-                            className="transition-colors hover:text-gold-600"
+                            className="transition-colors hover:text-purple-600"
                           >
                             {detail.value}
                           </a>
@@ -107,7 +107,7 @@ export default function ContactPage() {
       <section className="bg-white py-20 sm:py-24">
         <div className="container-page">
           <div className="max-w-2xl">
-            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-600">
+            <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
               Our Location
             </span>
             <h2 className="font-display text-3xl font-semibold text-navy-950 sm:text-4xl">
@@ -132,7 +132,7 @@ export default function ContactPage() {
             href={siteConfig.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors hover:text-gold-600"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors hover:text-purple-600"
           >
             Open in Google Maps
             <span aria-hidden className="transition-transform duration-300">

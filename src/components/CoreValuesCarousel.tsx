@@ -123,9 +123,9 @@ export function CoreValuesCarousel({ values }: { values: ValueItem[] }) {
                 {page.map((value) => (
                   <div
                     key={value.title}
-                    className="flex h-full flex-col items-start rounded-2xl border border-gold-300/70 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400 hover:shadow-xl hover:shadow-navy-900/10"
+                    className="flex h-full flex-col items-start rounded-2xl border border-purple-300/70 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-purple-400 hover:shadow-xl hover:shadow-navy-900/10"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500/10 text-gold-700">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-700">
                       {icons[value.icon]}
                     </div>
                     <h3 className="font-display mt-5 text-lg font-semibold text-navy-950">
@@ -152,7 +152,7 @@ export function CoreValuesCarousel({ values }: { values: ValueItem[] }) {
               aria-label={`Go to values page ${i + 1} of ${pages.length}`}
               aria-current={i === index}
               className={`h-2 rounded-full transition-all duration-300 ${
-                i === index ? "w-6 bg-gold-500" : "w-2 bg-navy-900/15 hover:bg-navy-900/30"
+                i === index ? "w-6 bg-purple-500" : "w-2 bg-navy-900/15 hover:bg-navy-900/30"
               }`}
             />
           ))}

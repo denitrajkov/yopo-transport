@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
         </div>
         <div className="container-page relative">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
             About Yopo Transport
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -98,7 +98,7 @@ export default function AboutPage() {
       {/* Mission */}
       <section className="bg-navy-950 py-24 sm:py-28">
         <div className="container-page max-w-3xl text-center">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
             Our Mission
           </span>
           <p className="font-display text-balance text-2xl font-medium leading-relaxed text-white sm:text-3xl">
@@ -133,7 +133,7 @@ export default function AboutPage() {
           <div className="mt-14 grid gap-8 lg:grid-cols-3">
             {commitments.map((item, index) => (
               <div key={item.title} className="relative pl-8">
-                <span className="font-display absolute left-0 top-0 text-sm font-semibold text-gold-600">
+                <span className="font-display absolute left-0 top-0 text-sm font-semibold text-purple-600">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <div className="absolute left-3 top-2 bottom-0 w-px bg-navy-900/10" />

@@ -5,7 +5,7 @@ import { useState, type FormEvent } from "react";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputStyles =
-  "w-full rounded-lg border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30";
+  "w-full rounded-lg border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/30";
 
 const labelStyles = "mb-1.5 block text-sm font-medium text-navy-900";
 
@@ -46,7 +46,7 @@ export function BecomeDriverForm() {
     return (
       <div
         role="status"
-        className="rounded-2xl border border-gold-500/30 bg-gold-50 p-8 text-center"
+        className="rounded-2xl border border-purple-500/30 bg-purple-50 p-8 text-center"
       >
         <h3 className="font-display text-xl font-semibold text-navy-950">
           Application Received
@@ -72,7 +72,7 @@ export function BecomeDriverForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="firstName" className={labelStyles}>
-            First Name<span className="text-gold-600"> *</span>
+            First Name<span className="text-purple-600"> *</span>
           </label>
           <input
             id="firstName"
@@ -86,7 +86,7 @@ export function BecomeDriverForm() {
         </div>
         <div>
           <label htmlFor="lastName" className={labelStyles}>
-            Last Name<span className="text-gold-600"> *</span>
+            Last Name<span className="text-purple-600"> *</span>
           </label>
           <input
             id="lastName"
@@ -103,7 +103,7 @@ export function BecomeDriverForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="email" className={labelStyles}>
-            Email<span className="text-gold-600"> *</span>
+            Email<span className="text-purple-600"> *</span>
           </label>
           <input
             id="email"
@@ -117,7 +117,7 @@ export function BecomeDriverForm() {
         </div>
         <div>
           <label htmlFor="phone" className={labelStyles}>
-            Phone<span className="text-gold-600"> *</span>
+            Phone<span className="text-purple-600"> *</span>
           </label>
           <input
             id="phone"
@@ -134,7 +134,7 @@ export function BecomeDriverForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="dateOfBirth" className={labelStyles}>
-            Date of Birth<span className="text-gold-600"> *</span>
+            Date of Birth<span className="text-purple-600"> *</span>
           </label>
           <input
             id="dateOfBirth"
@@ -147,7 +147,7 @@ export function BecomeDriverForm() {
         </div>
         <div>
           <label htmlFor="experience" className={labelStyles}>
-            Driving Experience<span className="text-gold-600"> *</span>
+            Driving Experience<span className="text-purple-600"> *</span>
           </label>
           <select
             id="experience"
@@ -170,7 +170,7 @@ export function BecomeDriverForm() {
 
       <div>
         <label htmlFor="cdl" className={labelStyles}>
-          Upload CDL (PDF or Image)<span className="text-gold-600"> *</span>
+          Upload CDL (PDF or Image)<span className="text-purple-600"> *</span>
         </label>
         <input
           id="cdl"
@@ -178,7 +178,7 @@ export function BecomeDriverForm() {
           type="file"
           required
           accept=".pdf,image/*"
-          className="block w-full rounded-lg text-sm text-navy-600 file:mr-4 file:rounded-full file:border-0 file:bg-gold-500 file:px-5 file:py-2.5 file:text-sm file:font-semibold file:text-navy-950 file:transition-colors file:duration-200 hover:file:bg-gold-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/30"
+          className="block w-full rounded-lg text-sm text-navy-600 file:mr-4 file:rounded-full file:border-0 file:bg-purple-500 file:px-5 file:py-2.5 file:text-sm file:font-semibold file:text-navy-950 file:transition-colors file:duration-200 hover:file:bg-purple-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/30"
         />
       </div>
 
@@ -188,19 +188,19 @@ export function BecomeDriverForm() {
           name="consent"
           type="checkbox"
           required
-          className="mt-1 h-4 w-4 shrink-0 rounded border-navy-900/30 text-gold-500 focus:ring-2 focus:ring-gold-500/40"
+          className="mt-1 h-4 w-4 shrink-0 rounded border-navy-900/30 text-purple-500 focus:ring-2 focus:ring-purple-500/40"
         />
         <label htmlFor="consent" className="text-sm leading-relaxed text-navy-700">
           I agree that Yopo Transport may collect and use the information
           provided in this form to review my application.
-          <span className="text-gold-600"> *</span>
+          <span className="text-purple-600"> *</span>
         </label>
       </div>
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         {status === "submitting" ? "Submitting..." : "Submit Application"}
       </button>

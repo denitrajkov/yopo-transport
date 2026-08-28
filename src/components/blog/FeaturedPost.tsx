@@ -17,13 +17,13 @@ export function FeaturedPost({ post }: { post: BlogPost }) {
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
-        <span className="absolute left-5 top-5 rounded-full bg-gold-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-navy-950">
+        <span className="absolute left-5 top-5 rounded-full bg-purple-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-navy-950">
           Featured Article
         </span>
       </div>
 
       <div className="flex flex-col justify-center p-8 sm:p-10 lg:p-12">
-        <span className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">
+        <span className="text-xs font-semibold uppercase tracking-[0.15em] text-purple-600">
           {post.category}
         </span>
         <h2 className="font-display mt-4 text-balance text-2xl font-semibold leading-tight text-navy-950 sm:text-3xl">
@@ -41,7 +41,7 @@ export function FeaturedPost({ post }: { post: BlogPost }) {
           <span>{post.readingTime}</span>
         </div>
 
-        <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-navy-900 transition-colors group-hover:text-gold-600">
+        <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-navy-900 transition-colors group-hover:text-purple-600">
           Read Article
           <span
             aria-hidden

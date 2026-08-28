@@ -36,7 +36,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
           <span>{post.readingTime}</span>
         </div>
 
-        <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors group-hover:text-gold-600">
+        <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors group-hover:text-purple-600">
           Read Article
           <span
             aria-hidden

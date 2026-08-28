@@ -16,17 +16,17 @@
   --color-navy-900: #101c2c;
   --color-navy-950: #080f1a;
 
-  --color-gold-50: #fbf7ee;
-  --color-gold-100: #f5ebd2;
-  --color-gold-200: #ecd7a5;
-  --color-gold-300: #e0bd71;
-  --color-gold-400: #d3a34d;
-  --color-gold-500: #c28f3a;
-  --color-gold-600: #a5732c;
-  --color-gold-700: #825726;
-  --color-gold-800: #6b4624;
-  --color-gold-900: #593a21;
-  --color-gold-950: #331f11;
+  --color-purple-50: #f5f1fb;
+  --color-purple-100: #e9ddf5;
+  --color-purple-200: #d3bfea;
+  --color-purple-300: #b596d9;
+  --color-purple-400: #9b6ec8;
+  --color-purple-500: #8355b8;
+  --color-purple-600: #6c4198;
+  --color-purple-700: #532f78;
+  --color-purple-800: #33174a;
+  --color-purple-900: #1e0e38;
+  --color-purple-950: #120524;
 
   --animate-fade-up: fade-up 0.8s ease-out both;
   --animate-fade-in: fade-in 1s ease-out both;
@@ -63,7 +63,7 @@
   }
 
   ::selection {
-    background-color: var(--color-gold-300);
+    background-color: var(--color-purple-300);
     color: var(--color-navy-950);
   }
 }

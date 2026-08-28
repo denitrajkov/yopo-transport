@@ -55,13 +55,13 @@ export default async function JobPage({ params }: JobPageProps) {
           <nav aria-label="Breadcrumb" className="text-xs text-navy-500">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/" className="transition-colors hover:text-gold-600">
+                <Link href="/" className="transition-colors hover:text-purple-600">
                   Home
                 </Link>
               </li>
               <li aria-hidden>/</li>
               <li>
-                <Link href="/careers" className="transition-colors hover:text-gold-600">
+                <Link href="/careers" className="transition-colors hover:text-purple-600">
                   Careers
                 </Link>
               </li>
@@ -72,7 +72,7 @@ export default async function JobPage({ params }: JobPageProps) {
             </ol>
           </nav>
 
-          <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">
+          <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-purple-600">
             {job.department}
           </span>
           <h1 className="font-display text-balance mt-3 max-w-3xl text-3xl font-semibold leading-tight text-navy-950 sm:text-4xl lg:text-5xl">
@@ -90,7 +90,7 @@ export default async function JobPage({ params }: JobPageProps) {
           <div className="mt-8">
             <a
               href={applyHref}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25"
             >
               Apply Now
             </a>
@@ -111,7 +111,7 @@ export default async function JobPage({ params }: JobPageProps) {
             <ul className="mt-5 space-y-3">
               {job.responsibilities.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-base leading-relaxed text-navy-700">
-                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -123,7 +123,7 @@ export default async function JobPage({ params }: JobPageProps) {
             <ul className="mt-5 space-y-3">
               {job.requirements.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-base leading-relaxed text-navy-700">
-                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -137,7 +137,7 @@ export default async function JobPage({ params }: JobPageProps) {
                 <ul className="mt-5 space-y-3">
                   {job.niceToHave.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-base leading-relaxed text-navy-700">
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -155,7 +155,7 @@ export default async function JobPage({ params }: JobPageProps) {
               </p>
               <a
                 href={applyHref}
-                className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
+                className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25"
               >
                 Apply Now
               </a>
@@ -164,7 +164,7 @@ export default async function JobPage({ params }: JobPageProps) {
             <div className="mt-10">
               <Link
                 href="/careers"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors hover:text-gold-600"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors hover:text-purple-600"
               >
                 <span aria-hidden>&larr;</span>
                 Back to All Openings

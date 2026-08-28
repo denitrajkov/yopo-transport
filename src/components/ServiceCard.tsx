@@ -6,7 +6,7 @@ export function ServiceCard({ service }: { service: Service }) {
   return (
     <article
       id={service.slug}
-      className="group relative flex scroll-mt-28 flex-col overflow-hidden rounded-2xl border border-gold-500/40 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-gold-500/70 hover:shadow-2xl hover:shadow-navy-900/15"
+      className="group relative flex scroll-mt-28 flex-col overflow-hidden rounded-2xl border border-purple-500/40 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/70 hover:shadow-2xl hover:shadow-navy-900/15"
     >
       <div className="relative h-56 w-full overflow-hidden">
         <Image
@@ -32,14 +32,14 @@ export function ServiceCard({ service }: { service: Service }) {
               key={highlight}
               className="flex items-start gap-2 text-sm text-navy-700"
             >
-              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500" />
               {highlight}
             </li>
           ))}
         </ul>
         <Link
           href="/contact"
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors group-hover:text-gold-600"
+          className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 transition-colors group-hover:text-purple-600"
         >
           Request a Quote
           <span

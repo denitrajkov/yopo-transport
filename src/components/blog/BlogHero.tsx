@@ -15,7 +15,7 @@ export function BlogHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
       </div>
       <div className="container-page relative">
-        <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+        <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
           Blog
         </span>
         <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">

@@ -23,7 +23,7 @@ export function SectionHeading({
       {eyebrow ? (
         <span
           className={`mb-4 inline-block text-xs font-semibold uppercase tracking-[0.2em] ${
-            isLight ? "text-gold-300" : "text-gold-600"
+            isLight ? "text-purple-300" : "text-purple-600"
           }`}
         >
           {eyebrow}

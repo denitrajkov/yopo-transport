@@ -6,9 +6,9 @@ export function ProcessSteps() {
       {processSteps.map((item, index) => (
         <li
           key={item.step}
-          className="group relative rounded-2xl border border-gold-500/40 bg-white p-7 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-gold-500/70 hover:shadow-xl hover:shadow-navy-900/10"
+          className="group relative rounded-2xl border border-purple-500/40 bg-white p-7 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
         >
-          <span className="font-display text-4xl font-semibold text-gold-600/40 transition-colors duration-500 group-hover:text-gold-600/70">
+          <span className="font-display text-4xl font-semibold text-purple-600/40 transition-colors duration-500 group-hover:text-purple-600/70">
             {item.step}
           </span>
           <h3 className="font-display mt-4 text-lg font-semibold text-navy-950">
@@ -20,7 +20,7 @@ export function ProcessSteps() {
           {index < processSteps.length - 1 ? (
             <span
               aria-hidden
-              className="absolute right-[-14px] top-1/2 hidden -translate-y-1/2 text-2xl text-gold-500 lg:block"
+              className="absolute right-[-14px] top-1/2 hidden -translate-y-1/2 text-2xl text-purple-500 lg:block"
             >
               &rarr;
             </span>

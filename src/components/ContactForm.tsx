@@ -6,7 +6,7 @@ import { serviceOptions } from "@/lib/data";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputStyles =
-  "w-full rounded-lg border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30";
+  "w-full rounded-lg border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/30";
 
 const labelStyles = "mb-1.5 block text-sm font-medium text-navy-900";
 
@@ -40,7 +40,7 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="rounded-2xl border border-gold-500/30 bg-gold-50 p-8 text-center"
+        className="rounded-2xl border border-purple-500/30 bg-purple-50 p-8 text-center"
       >
         <h3 className="font-display text-xl font-semibold text-navy-950">
           Request received
@@ -66,7 +66,7 @@ export function ContactForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className={labelStyles}>
-            Full Name<span className="text-gold-600"> *</span>
+            Full Name<span className="text-purple-600"> *</span>
           </label>
           <input
             id="name"
@@ -96,7 +96,7 @@ export function ContactForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="email" className={labelStyles}>
-            Email<span className="text-gold-600"> *</span>
+            Email<span className="text-purple-600"> *</span>
           </label>
           <input
             id="email"
@@ -110,7 +110,7 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor="phone" className={labelStyles}>
-            Phone<span className="text-gold-600"> *</span>
+            Phone<span className="text-purple-600"> *</span>
           </label>
           <input
             id="phone"
@@ -188,7 +188,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-purple-500 px-7 py-3.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         {status === "submitting" ? "Sending..." : "Submit Request"}
       </button>

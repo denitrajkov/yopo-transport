@@ -19,7 +19,7 @@ function ContentBlock({ block, index }: { block: BlogContentBlock; index: number
         <ul className="mt-5 space-y-3">
           {block.items.map((item) => (
             <li key={item} className="flex items-start gap-3 text-base leading-relaxed text-navy-700">
-              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500" />
               <span>{item}</span>
             </li>
           ))}

@@ -17,7 +17,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
         <h3 className="font-display text-lg font-semibold text-navy-950">
           {member.name}
         </h3>
-        <p className="mt-1 text-sm font-medium text-gold-600">{member.role}</p>
+        <p className="mt-1 text-sm font-medium text-purple-600">{member.role}</p>
         <p className="mt-3 text-sm leading-relaxed text-navy-700">
           {member.bio}
         </p>

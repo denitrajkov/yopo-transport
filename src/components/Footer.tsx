@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { footerOnlyLinks, navLinks, services, siteConfig, socialLinks } from "@/lib/data";
 
@@ -28,11 +29,17 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-navy-950">
       <div className="container-page grid gap-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
-          <Link
-            href="/"
-            className="font-display text-xl font-semibold tracking-tight text-white"
-          >
-            Yopo <span className="text-gold-400">Transport</span>
+          <Link href="/" className="flex items-center gap-2.5">
+            <Image
+              src="/images/yopo-logo.png"
+              alt="Yopo Transport"
+              width={44}
+              height={44}
+              className="h-10 w-10 rounded-lg object-cover"
+            />
+            <span className="font-display text-xl font-semibold tracking-tight text-white">
+              Yopo <span className="text-purple-400">Transport</span>
+            </span>
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-300">
             {siteConfig.description}
@@ -45,7 +52,7 @@ export function Footer() {
                 aria-label={social.name}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-navy-300 transition-colors duration-200 hover:border-gold-500/50 hover:text-gold-400"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-navy-300 transition-colors duration-200 hover:border-purple-500/50 hover:text-purple-400"
               >
                 {socialIcons[social.name]}
               </a>
@@ -62,7 +69,7 @@ export function Footer() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-sm text-navy-300 transition-colors hover:text-gold-400"
+                  className="text-sm text-navy-300 transition-colors hover:text-purple-400"
                 >
                   {link.label}
                 </Link>
@@ -80,7 +87,7 @@ export function Footer() {
               <li key={service.slug}>
                 <Link
                   href={`/services#${service.slug}`}
-                  className="text-sm text-navy-300 transition-colors hover:text-gold-400"
+                  className="text-sm text-navy-300 transition-colors hover:text-purple-400"
                 >
                   {service.name}
                 </Link>
@@ -99,7 +106,7 @@ export function Footer() {
                 href={siteConfig.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors hover:text-gold-400"
+                className="transition-colors hover:text-purple-400"
               >
                 {siteConfig.address}
               </a>
@@ -107,7 +114,7 @@ export function Footer() {
             <li>
               <a
                 href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}
-                className="transition-colors hover:text-gold-400"
+                className="transition-colors hover:text-purple-400"
               >
                 {siteConfig.phone}
               </a>
@@ -115,7 +122,7 @@ export function Footer() {
             <li>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="transition-colors hover:text-gold-400"
+                className="transition-colors hover:text-purple-400"
               >
                 {siteConfig.email}
               </a>

@@ -76,9 +76,9 @@ export function WhyChooseUs() {
       {features.map((feature) => (
         <div
           key={feature.title}
-          className="group rounded-2xl border border-gold-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-gold-500/70 hover:shadow-xl hover:shadow-navy-900/10"
+          className="group rounded-2xl border border-purple-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-gold-400 transition-colors duration-500 group-hover:bg-gold-500 group-hover:text-navy-950">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-purple-400 transition-colors duration-500 group-hover:bg-purple-500 group-hover:text-navy-950">
             {feature.icon}
           </div>
           <h3 className="font-display mt-5 text-lg font-semibold text-navy-950">

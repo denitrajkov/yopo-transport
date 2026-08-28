@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -42,11 +43,18 @@ export function Navbar() {
         aria-label="Primary"
         className="container-page flex h-20 items-center justify-between"
       >
-        <Link
-          href="/"
-          className="font-display text-xl font-semibold tracking-tight text-white"
-        >
-          Yopo <span className="text-gold-400">Transport</span>
+        <Link href="/" className="flex items-center gap-2.5">
+          <Image
+            src="/images/yopo-logo.png"
+            alt="Yopo Transport"
+            width={48}
+            height={48}
+            priority
+            className="h-11 w-11 rounded-lg object-cover"
+          />
+          <span className="font-display text-xl font-semibold tracking-tight text-white">
+            Yopo <span className="text-purple-400">Transport</span>
+          </span>
         </Link>
 
         <div className="hidden items-center gap-10 lg:flex">
@@ -63,7 +71,7 @@ export function Navbar() {
                     aria-current={isActive ? "page" : undefined}
                     className={`text-sm font-medium tracking-wide transition-colors duration-200 ${
                       isActive
-                        ? "text-gold-400"
+                        ? "text-purple-400"
                         : "text-navy-100 hover:text-white"
                     }`}
                   >
@@ -82,7 +90,7 @@ export function Navbar() {
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-gold-500 px-6 py-2.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25"
+              className="inline-flex items-center justify-center rounded-full bg-purple-500 px-6 py-2.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25"
             >
               Request a Quote
             </Link>
@@ -138,7 +146,7 @@ export function Navbar() {
                   aria-current={isActive ? "page" : undefined}
                   className={`rounded-lg px-3 py-3 text-base font-medium transition-colors ${
                     isActive
-                      ? "bg-white/5 text-gold-400"
+                      ? "bg-white/5 text-purple-400"
                       : "text-navy-100 hover:bg-white/5 hover:text-white"
                   }`}
                 >
@@ -148,7 +156,7 @@ export function Navbar() {
             })}
             <Link
               href="/contact"
-              className="mt-3 inline-flex items-center justify-center rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
+              className="mt-3 inline-flex items-center justify-center rounded-full bg-purple-500 px-6 py-3 text-sm font-semibold text-navy-950 transition-colors hover:bg-purple-400"
             >
               Request a Quote
             </Link>

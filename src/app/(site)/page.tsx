@@ -32,7 +32,7 @@ export default function HomePage() {
 
         <div className="container-page relative pt-24">
           <div className="max-w-2xl animate-fade-up">
-            <span className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+            <span className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
               Premium Freight &amp; Logistics
             </span>
             <h1 className="font-display text-balance text-4xl font-semibold leading-[1.1] text-white sm:text-5xl lg:text-6xl">
@@ -92,7 +92,7 @@ export default function HomePage() {
                 "Service built around your schedule, not ours",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold-500/15 text-gold-600">
+                  <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-purple-500/15 text-purple-600">
                     <svg
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -109,7 +109,7 @@ export default function HomePage() {
               ))}
             </ul>
             <div className="mt-9">
-              <Button href="/about" variant="gold-outline">
+              <Button href="/about" variant="purple-outline">
                 Learn More About Us
               </Button>
             </div>
@@ -132,7 +132,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-14 text-center">
-            <Button href="/services" variant="gold-outline">
+            <Button href="/services" variant="purple-outline">
               View All Services
             </Button>
           </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-white py-24 sm:py-28">
         <div
           aria-hidden
-          className="absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,_rgba(194,143,58,0.08),_transparent_65%)]"
+          className="absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,_rgba(131,85,184,0.08),_transparent_65%)]"
         />
         <div className="container-page relative">
           <SectionHeading
