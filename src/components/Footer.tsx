@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks, services, siteConfig, socialLinks } from "@/lib/data";
+import { footerOnlyLinks, navLinks, services, siteConfig, socialLinks } from "@/lib/data";
 
 const socialIcons: Record<string, React.ReactNode> = {
   Facebook: (
@@ -58,7 +58,7 @@ export function Footer() {
             Company
           </h3>
           <ul className="mt-4 space-y-3">
-            {navLinks.map((link) => (
+            {[...navLinks, ...footerOnlyLinks].map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -68,14 +68,6 @@ export function Footer() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/become-a-driver"
-                className="text-sm text-navy-300 transition-colors hover:text-gold-400"
-              >
-                Become a Driver
-              </Link>
-            </li>
           </ul>
         </div>
 
