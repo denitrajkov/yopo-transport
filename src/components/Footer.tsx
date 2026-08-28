@@ -33,9 +33,9 @@ export function Footer() {
             <Image
               src="/images/yopo-logo.png"
               alt="Yopo Transport"
-              width={44}
-              height={44}
-              className="h-10 w-10 rounded-lg object-cover"
+              width={112}
+              height={112}
+              className="h-14 w-14 rounded-lg object-cover"
             />
             <span className="font-display text-xl font-semibold tracking-tight text-white">
               Yopo <span className="text-purple-400">Transport</span>

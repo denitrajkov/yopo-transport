@@ -47,10 +47,10 @@ export function Navbar() {
           <Image
             src="/images/yopo-logo.png"
             alt="Yopo Transport"
-            width={100}
-            height={100}
+            width={140}
+            height={140}
             priority
-            className="h-11 w-11 rounded-lg object-cover"
+            className="h-16 w-16 rounded-lg object-cover"
           />
         </Link>
 
