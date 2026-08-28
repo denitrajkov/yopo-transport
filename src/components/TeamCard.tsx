@@ -13,12 +13,12 @@ const iconProps = {
 export function TeamCard({ member }: { member: TeamMember }) {
   return (
     <article className="group flex flex-col items-center rounded-2xl border border-purple-500/40 bg-white p-8 text-center transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10">
-      <div className="relative h-32 w-32 overflow-hidden rounded-full ring-4 ring-purple-500/10">
+      <div className="relative h-40 w-40 overflow-hidden rounded-full ring-4 ring-purple-500/10">
         <Image
           src={member.image}
           alt={`Portrait placeholder for ${member.name}`}
           fill
-          sizes="128px"
+          sizes="160px"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
       </div>
