@@ -44,9 +44,8 @@ export default function TeamPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Meet the Team"
-            title="Placeholder Team Profiles"
-            description="The profiles below are placeholders for layout purposes. Replace names, titles, bios, and photos with your real team once available."
-            align="center"
+            title="The People Behind Our Success"
+            description="Behind every successful company is a team of passionate, dedicated, and driven people. We believe that our greatest strength lies in the people we work with and the values we share."
           />
           <div className="mt-14 space-y-16">
             {teamDepartments.map((department) => {
