@@ -47,7 +47,11 @@ const reasons: Reason[] = [
       "Track shipments as they move, with proactive status updates instead of chasing down check calls.",
     icon: (
       <svg {...iconProps}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"
+        />
         <circle cx="12" cy="12" r="2.75" />
       </svg>
     ),
@@ -70,7 +74,10 @@ const reasons: Reason[] = [
     icon: (
       <svg {...iconProps}>
         <circle cx="12" cy="8" r="3.25" />
-        <path strokeLinecap="round" d="M5.5 20c1-3.5 3.8-5.5 6.5-5.5s5.5 2 6.5 5.5" />
+        <path
+          strokeLinecap="round"
+          d="M5.5 20c1-3.5 3.8-5.5 6.5-5.5s5.5 2 6.5 5.5"
+        />
       </svg>
     ),
   },
@@ -81,10 +88,10 @@ export default function ForShippersPage() {
 
   return (
     <>
-      <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
+      <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2200&auto=format&fit=crop"
+            src="images/truck-shipers.png"
             alt="Warehouse racking staged with freight ready for shipment"
             fill
             priority
@@ -101,8 +108,8 @@ export default function ForShippersPage() {
             Freight Solutions Built Around Your Business
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
-            Reliable capacity, clear communication, and a team that treats
-            your freight like it matters — because it does.
+            Reliable capacity, clear communication, and a team that treats your
+            freight like it matters — because it does.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Button href="/contact" variant="primary">
@@ -201,8 +208,8 @@ export default function ForShippersPage() {
             tone="light"
           />
           <p className="mx-auto mt-3 max-w-xl text-balance text-center text-xs text-navy-400">
-            Sample testimonials shown for layout purposes — replace with
-            real, permissioned client feedback.
+            Sample testimonials shown for layout purposes — replace with real,
+            permissioned client feedback.
           </p>
           <div className="mt-14">
             <TestimonialsCarousel testimonials={testimonials} />
