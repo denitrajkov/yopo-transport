@@ -36,11 +36,11 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/trucks.png"
-            alt="Logistics team reviewing freight operations"
+            alt="Fleet of Yopo Transport trucks parked at the distribution yard"
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-[center_60%]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
         </div>
