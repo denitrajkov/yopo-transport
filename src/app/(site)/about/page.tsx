@@ -35,7 +35,7 @@ export default function AboutPage() {
       <section className="relative flex min-h-[55vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1591768793355-74d04bb6608f?q=80&w=2200&auto=format&fit=crop"
+            src="/images/trucks.png"
             alt="Logistics team reviewing freight operations"
             fill
             priority
