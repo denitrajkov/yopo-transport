@@ -32,7 +32,7 @@ const commitments = [
 export default function AboutPage() {
   return (
     <>
-      <section className="relative flex min-h-[55vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
+      <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
             src="/images/trucks.png"
@@ -42,7 +42,7 @@ export default function AboutPage() {
             sizes="100vw"
             className="object-cover object-[center_60%]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/45 to-navy-950/15 sm:from-navy-950 sm:via-navy-950/80 sm:to-navy-950/50" />
         </div>
         <div className="container-page relative">
           <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
