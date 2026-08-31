@@ -19,13 +19,14 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-navy-950">
         <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2400&auto=format&fit=crop"
-            alt="Semi-truck traveling on a highway at dusk"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
+          <video
+            src="/videos/video-truck.mp4"
+            poster="/videos/video-truck-poster.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/40" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/40" />
