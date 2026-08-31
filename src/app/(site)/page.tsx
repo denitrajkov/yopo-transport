@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -113,6 +114,84 @@ export default function HomePage() {
                 Learn More About Us
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Shippers & Brokers */}
+      <section className="bg-navy-950 py-24 sm:py-28">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Who We Serve"
+            title="Built for Shippers and Brokers Alike"
+            description="Whether you're moving freight or booking capacity, we make it simple to work with us."
+            align="center"
+            tone="light"
+          />
+          <div className="mt-14 grid gap-8 lg:grid-cols-2">
+            <Link
+              href="/for-shippers"
+              className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-3xl border border-purple-500/30 shadow-xl shadow-navy-950/40 transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/60 hover:shadow-2xl"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1600&auto=format&fit=crop"
+                alt="Warehouse racking staged with freight ready for shipment"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/10" />
+              <div className="relative p-8 sm:p-10">
+                <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-purple-300">
+                  For Shippers
+                </span>
+                <h3 className="font-display text-2xl font-semibold text-white sm:text-3xl">
+                  Ship With Confidence
+                </h3>
+                <p className="mt-3 max-w-sm text-sm leading-relaxed text-navy-100/85">
+                  Reliable capacity, real-time visibility, and dedicated
+                  support — built around how your business ships.
+                </p>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors group-hover:text-purple-300">
+                  Explore Shipper Solutions
+                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+                    &rarr;
+                  </span>
+                </span>
+              </div>
+            </Link>
+
+            <Link
+              href="/for-brokers"
+              className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-3xl border border-purple-500/30 shadow-xl shadow-navy-950/40 transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/60 hover:shadow-2xl"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1761133381018-aed5063d22fe?q=80&w=1600&auto=format&fit=crop"
+                alt="Aerial view of a freight truck on a highway between fields"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/10" />
+              <div className="relative p-8 sm:p-10">
+                <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-purple-300">
+                  For Brokers
+                </span>
+                <h3 className="font-display text-2xl font-semibold text-white sm:text-3xl">
+                  Partner With a Carrier You Trust
+                </h3>
+                <p className="mt-3 max-w-sm text-sm leading-relaxed text-navy-100/85">
+                  Reliable capacity, responsive dispatch, and a booking
+                  process that respects your time.
+                </p>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors group-hover:text-purple-300">
+                  Explore Broker Resources
+                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+                    &rarr;
+                  </span>
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
