@@ -96,7 +96,7 @@ export default function ForShippersPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-[center_60%]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
         </div>
