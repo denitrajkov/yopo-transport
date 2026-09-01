@@ -87,7 +87,7 @@ export const services: Service[] = [
     description:
       "Our LTL network lets you pay only for the space you use, consolidating your shipment with others while maintaining careful tracking and handling standards throughout transit.",
     image:
-      "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1600&auto=format&fit=crop",
+      "images/truck-nature.png",
     highlights: [
       "Pay-for-space pricing",
       "Consolidated network routing",
