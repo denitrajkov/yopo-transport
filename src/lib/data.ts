@@ -78,7 +78,22 @@ export const services: Service[] = [
       "Reduced handling risk",
       "Flexible scheduling windows",
     ],
-  }
+  },
+  {
+    slug: "less-than-truckload",
+    name: "Less Than Truckload (LTL)",
+    shortDescription:
+      "Cost-efficient shipping for smaller freight that doesn't require a full trailer.",
+    description:
+      "Our LTL network lets you pay only for the space you use, consolidating your shipment with others while maintaining careful tracking and handling standards throughout transit.",
+    image:
+      "images/truck-nature.png",
+    highlights: [
+      "Pay-for-space pricing",
+      "Consolidated network routing",
+      "Ideal for recurring smaller loads",
+    ],
+  },
 ];
 
 export type Stat = {
