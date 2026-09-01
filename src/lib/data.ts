@@ -23,7 +23,6 @@ export const socialLinks = [
 ];
 
 export const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/for-shippers", label: "For Shippers" },
