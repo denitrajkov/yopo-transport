@@ -150,12 +150,15 @@ export default function HomePage() {
                   Ship With Confidence
                 </h3>
                 <p className="mt-3 max-w-sm text-sm leading-relaxed text-navy-100/85">
-                  Reliable capacity, real-time visibility, and dedicated
-                  support — built around how your business ships.
+                  Reliable capacity, real-time visibility, and dedicated support
+                  — built around how your business ships.
                 </p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors group-hover:text-purple-300">
                   Explore Shipper Solutions
-                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+                  <span
+                    aria-hidden
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
                     &rarr;
                   </span>
                 </span>
@@ -167,7 +170,7 @@ export default function HomePage() {
               className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-3xl border border-purple-500/30 shadow-xl shadow-navy-950/40 transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/60 hover:shadow-2xl"
             >
               <Image
-                src="https://images.unsplash.com/photo-1761133381018-aed5063d22fe?q=80&w=1600&auto=format&fit=crop"
+                src="images/for-brokers.png"
                 alt="Aerial view of a freight truck on a highway between fields"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -182,12 +185,15 @@ export default function HomePage() {
                   Partner With a Carrier You Trust
                 </h3>
                 <p className="mt-3 max-w-sm text-sm leading-relaxed text-navy-100/85">
-                  Reliable capacity, responsive dispatch, and a booking
-                  process that respects your time.
+                  Reliable capacity, responsive dispatch, and a booking process
+                  that respects your time.
                 </p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors group-hover:text-purple-300">
                   Explore Broker Resources
-                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+                  <span
+                    aria-hidden
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
                     &rarr;
                   </span>
                 </span>

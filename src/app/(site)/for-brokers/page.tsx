@@ -71,7 +71,11 @@ const reasons: Reason[] = [
     icon: (
       <svg {...iconProps}>
         <circle cx="12" cy="12" r="8.5" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8.5 12.5l2.3 2.3L16 10" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M8.5 12.5l2.3 2.3L16 10"
+        />
       </svg>
     ),
   },
@@ -97,7 +101,7 @@ export default function ForBrokersPage() {
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1761133381018-aed5063d22fe?q=80&w=2200&auto=format&fit=crop"
+            src="images/for-brokers.png"
             alt="Aerial view of a freight truck on a highway between fields"
             fill
             priority
@@ -114,8 +118,8 @@ export default function ForBrokersPage() {
             A Carrier Partner You Can Count On
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
-            Reliable capacity, responsive dispatch, and a booking process
-            that respects your time.
+            Reliable capacity, responsive dispatch, and a booking process that
+            respects your time.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Button href="/contact" variant="primary">
