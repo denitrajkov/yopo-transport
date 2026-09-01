@@ -72,7 +72,7 @@ export const services: Service[] = [
     description:
       "When your freight fills a trailer — or you simply want it to move without stops — our FTL service provides a dedicated truck from origin to destination, minimizing handling and transit time.",
     image:
-      "images/yopo-truck.png",
+      "images/yopo-freight.png",
     highlights: [
       "Direct, single-stop routing",
       "Reduced handling risk",
