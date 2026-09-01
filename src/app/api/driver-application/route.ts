@@ -54,11 +54,13 @@ export async function POST(request: Request) {
     });
 
     if (error) {
+      console.error("Resend error:", error);
       return NextResponse.json({ success: false }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("driver-application route error:", err);
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }
