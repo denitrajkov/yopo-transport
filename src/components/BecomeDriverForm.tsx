@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -18,6 +19,7 @@ const experienceOptions = [
 ];
 
 export function BecomeDriverForm() {
+  const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -35,38 +37,14 @@ export function BecomeDriverForm() {
       const result = await response.json();
 
       if (result.success) {
-        setStatus("success");
         form.reset();
+        router.push("/become-a-driver/thank-you");
       } else {
         setStatus("error");
       }
     } catch {
       setStatus("error");
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div
-        role="status"
-        className="rounded-2xl border border-purple-500/30 bg-purple-50 p-8 text-center"
-      >
-        <h3 className="font-display text-xl font-semibold text-navy-950">
-          Application Received
-        </h3>
-        <p className="mt-2 text-sm leading-relaxed text-navy-700">
-          Thank you for applying. Our team will review your application and
-          reach out to you shortly.
-        </p>
-        <button
-          type="button"
-          onClick={() => setStatus("idle")}
-          className="mt-6 inline-flex items-center justify-center rounded-full border border-navy-900/20 px-6 py-2.5 text-sm font-semibold text-navy-900 transition-colors hover:border-navy-900/40"
-        >
-          Submit another application
-        </button>
-      </div>
-    );
   }
 
   return (

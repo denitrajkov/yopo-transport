@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import { serviceOptions } from "@/lib/data";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "error";
 
 const inputStyles =
   "w-full rounded-lg border border-navy-900/15 bg-white px-4 py-3 text-sm text-navy-950 placeholder:text-navy-400 transition-colors duration-200 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/30";
@@ -11,6 +12,7 @@ const inputStyles =
 const labelStyles = "mb-1.5 block text-sm font-medium text-navy-900";
 
 export function ContactForm() {
+  const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -29,36 +31,11 @@ export function ContactForm() {
       // });
       console.log("Quote request submitted (frontend-only placeholder):", data);
       await new Promise((resolve) => setTimeout(resolve, 600));
-      setStatus("success");
       form.reset();
+      router.push("/contact/thank-you");
     } catch {
       setStatus("error");
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div
-        role="status"
-        className="rounded-2xl border border-purple-500/30 bg-purple-50 p-8 text-center"
-      >
-        <h3 className="font-display text-xl font-semibold text-navy-950">
-          Request received
-        </h3>
-        <p className="mt-2 text-sm leading-relaxed text-navy-700">
-          Thank you for reaching out. This is a placeholder confirmation —
-          connect a backend or email service to deliver real submissions to
-          your team.
-        </p>
-        <button
-          type="button"
-          onClick={() => setStatus("idle")}
-          className="mt-6 inline-flex items-center justify-center rounded-full border border-navy-900/20 px-6 py-2.5 text-sm font-semibold text-navy-900 transition-colors hover:border-navy-900/40"
-        >
-          Submit another request
-        </button>
-      </div>
-    );
   }
 
   return (
