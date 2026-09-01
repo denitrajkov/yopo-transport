@@ -91,7 +91,7 @@ export default function ForShippersPage() {
       <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="images/truck-shipers.png"
+            src="/images/truck-shipers.png"
             alt="Warehouse racking staged with freight ready for shipment"
             fill
             priority
@@ -165,9 +165,9 @@ export default function ForShippersPage() {
             {featuredServices.map((service) => (
               <div
                 key={service.slug}
-                className="rounded-2xl border border-navy-900/10 bg-white p-6"
+                className="group rounded-2xl border border-purple-500/40 bg-white p-6 transition-all duration-500 hover:-translate-y-1 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
               >
-                <h3 className="font-display text-lg font-semibold text-navy-950">
+                <h3 className="font-display text-lg font-semibold text-navy-950 transition-colors duration-500 group-hover:text-purple-600">
                   {service.name}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-navy-700">

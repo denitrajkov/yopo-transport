@@ -101,7 +101,7 @@ export default function ForBrokersPage() {
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="images/for-brokers.png"
+            src="/images/for-brokers.png"
             alt="Aerial view of a freight truck on a highway between fields"
             fill
             priority

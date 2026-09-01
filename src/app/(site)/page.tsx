@@ -170,7 +170,7 @@ export default function HomePage() {
               className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-3xl border border-purple-500/30 shadow-xl shadow-navy-950/40 transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/60 hover:shadow-2xl"
             >
               <Image
-                src="images/for-brokers.png"
+                src="/images/for-brokers.png"
                 alt="Aerial view of a freight truck on a highway between fields"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"

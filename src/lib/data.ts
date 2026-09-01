@@ -56,7 +56,7 @@ export const services: Service[] = [
     description:
       "Our core freight transportation service moves shipments of every size across the country, backed by careful routing, vetted carriers, and proactive communication from pickup to delivery.",
     image:
-      "images/truck-face.png",
+      "/images/truck-face.png",
     highlights: [
       "Nationwide coverage",
       "Real-time shipment visibility",
@@ -71,7 +71,7 @@ export const services: Service[] = [
     description:
       "When your freight fills a trailer — or you simply want it to move without stops — our FTL service provides a dedicated truck from origin to destination, minimizing handling and transit time.",
     image:
-      "images/yopo-freight.png",
+      "/images/yopo-freight.png",
     highlights: [
       "Direct, single-stop routing",
       "Reduced handling risk",
@@ -86,7 +86,7 @@ export const services: Service[] = [
     description:
       "Our LTL network lets you pay only for the space you use, consolidating your shipment with others while maintaining careful tracking and handling standards throughout transit.",
     image:
-      "images/truck-nature.png",
+      "/images/truck-nature.png",
     highlights: [
       "Pay-for-space pricing",
       "Consolidated network routing",
