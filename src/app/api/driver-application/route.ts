@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import { siteConfig } from "@/lib/data";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -38,7 +37,9 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: "Yopo Transport <applications@yopotransport.com>",
-      to: siteConfig.careersEmail,
+      // TEMP: route to deni@yopoexpedite.com for testing; switch back to
+      // siteConfig.careersEmail once verified.
+      to: "deni@yopoexpedite.com",
       replyTo: String(formData.get("email") ?? ""),
       subject: `New Driver Application: ${firstName} ${lastName}`,
       html: `
