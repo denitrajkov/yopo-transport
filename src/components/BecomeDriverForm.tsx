@@ -17,8 +17,6 @@ const experienceOptions = [
   "10+ years",
 ];
 
-const WEB3FORMS_ACCESS_KEY = "51a4dae4-e7f7-40c7-b726-843fed3ac501";
-
 export function BecomeDriverForm() {
   const [status, setStatus] = useState<Status>("idle");
 
@@ -28,15 +26,9 @@ export function BecomeDriverForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-    formData.append(
-      "subject",
-      `New Driver Application: ${formData.get("firstName")} ${formData.get("lastName")}`,
-    );
-    formData.append("from_name", "Yopo Transport Website");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/driver-application", {
         method: "POST",
         body: formData,
       });
@@ -79,15 +71,6 @@ export function BecomeDriverForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-      <input
-        type="checkbox"
-        name="botcheck"
-        tabIndex={-1}
-        autoComplete="off"
-        className="hidden"
-        style={{ display: "none" }}
-      />
-
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="firstName" className={labelStyles}>
