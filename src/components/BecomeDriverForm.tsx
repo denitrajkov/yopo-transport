@@ -70,7 +70,7 @@ export function BecomeDriverForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+    <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="firstName" className={labelStyles}>
