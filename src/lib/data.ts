@@ -57,7 +57,7 @@ export const services: Service[] = [
     description:
       "Our core freight transportation service moves shipments of every size across the country, backed by careful routing, vetted carriers, and proactive communication from pickup to delivery.",
     image:
-      "images/truck-shipers.png",
+      "images/truck-face.png",
     highlights: [
       "Nationwide coverage",
       "Real-time shipment visibility",
