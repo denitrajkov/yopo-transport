@@ -280,7 +280,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection variant="driver" />
     </>
   );
 }

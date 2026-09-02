@@ -149,7 +149,7 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      <CTASection />
+      <CTASection variant="driver" />
     </>
   );
 }

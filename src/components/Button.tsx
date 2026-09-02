@@ -1,11 +1,13 @@
 import Link from "next/link";
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "purple-outline";
+type Variant = "primary" | "primary-white" | "secondary" | "purple-outline";
 
 const variantStyles: Record<Variant, string> = {
   primary:
     "bg-purple-500 text-navy-950 hover:bg-purple-400 shadow-lg shadow-purple-950/20 hover:shadow-purple-500/30",
+  "primary-white":
+    "bg-purple-500 text-white hover:bg-purple-400 shadow-lg shadow-purple-950/20 hover:shadow-purple-500/30",
   secondary:
     "bg-transparent text-white border border-white/30 hover:border-white/70 hover:bg-white/5",
   "purple-outline":
