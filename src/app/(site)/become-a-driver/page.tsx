@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { BecomeDriverForm } from "@/components/BecomeDriverForm";
 
 export const metadata: Metadata = {
@@ -15,23 +16,37 @@ const highlights = [
 
 export default function BecomeADriverPage() {
   return (
-    <section className="bg-navy-50 pb-24 pt-36 sm:pb-28 sm:pt-40">
-      <div className="container-page">
-        <div className="max-w-2xl">
-          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
+    <>
+      <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/yopo-truck.png"
+            alt="Yopo Transport driver's truck on the road"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[center_35%]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/50" />
+        </div>
+        <div className="container-page relative">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
             Become a Driver
           </span>
-          <h1 className="font-display text-balance text-4xl font-semibold leading-tight text-navy-950 sm:text-5xl">
+          <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
             Drive With Yopo Transport
           </h1>
-          <p className="mt-5 text-balance text-base leading-relaxed text-navy-700 sm:text-lg">
+          <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             Tell us about yourself and upload your CDL to be considered for
             our driving positions. Our recruiting team will follow up to
             discuss next steps.
           </p>
         </div>
+      </section>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-14">
+      <section className="bg-navy-50 py-24 sm:py-28">
+        <div className="container-page">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-14">
           <div className="space-y-8">
             <div className="rounded-2xl border border-navy-900/10 bg-white p-7">
               <h2 className="font-display text-lg font-semibold text-navy-950">
@@ -59,11 +74,12 @@ export default function BecomeADriverPage() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-navy-900/10 bg-white p-7 sm:p-9">
-            <BecomeDriverForm />
+            <div className="rounded-2xl border border-navy-900/10 bg-white p-7 sm:p-9">
+              <BecomeDriverForm />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
