@@ -38,7 +38,7 @@ export default function ContactPage() {
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="/images/yopo-our-story.jpg"
+            src="/images/yopo-our-story-draft.png"
             alt="Yopo Transport freight trailers staged at the distribution yard"
             fill
             priority
