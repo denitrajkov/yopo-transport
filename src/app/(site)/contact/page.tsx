@@ -38,7 +38,7 @@ export default function ContactPage() {
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-navy-950 pb-16 pt-32">
         <div className="absolute inset-0">
           <Image
-            src="/images/yopo-our-story.png"
+            src="/images/yopo-our-story.jpg"
             alt="Yopo Transport freight trailers staged at the distribution yard"
             fill
             priority
@@ -81,7 +81,9 @@ export default function ContactPage() {
                           <a
                             href={detail.href}
                             target={detail.newTab ? "_blank" : undefined}
-                            rel={detail.newTab ? "noopener noreferrer" : undefined}
+                            rel={
+                              detail.newTab ? "noopener noreferrer" : undefined
+                            }
                             className="transition-colors hover:text-purple-600"
                           >
                             {detail.value}
@@ -94,8 +96,8 @@ export default function ContactPage() {
                   ))}
                 </dl>
                 <p className="mt-6 text-xs text-navy-400">
-                  Placeholder contact information shown above — update with
-                  your company&rsquo;s real details.
+                  Placeholder contact information shown above — update with your
+                  company&rsquo;s real details.
                 </p>
               </div>
 
