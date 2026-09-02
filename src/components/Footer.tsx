@@ -13,7 +13,7 @@ const socialIcons: Record<string, React.ReactNode> = {
     <svg
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="h-4 w-4"
+      className="h-6 w-6"
       aria-hidden
     >
       <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z" />
@@ -25,7 +25,7 @@ const socialIcons: Record<string, React.ReactNode> = {
       fill="none"
       stroke="currentColor"
       strokeWidth={1.8}
-      className="h-4 w-4"
+      className="h-6 w-6"
       aria-hidden
     >
       <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
@@ -37,7 +37,7 @@ const socialIcons: Record<string, React.ReactNode> = {
     <svg
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="h-4 w-4"
+      className="h-6 w-6"
       aria-hidden
     >
       <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.45 20h-3.37v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V20h-3.37V8.5h3.24v1.57h.05c.45-.86 1.56-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.18V20z" />
@@ -75,7 +75,7 @@ export function Footer() {
                 aria-label={social.name}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-navy-300 transition-colors duration-200 hover:border-purple-500/50 hover:text-purple-400"
+                className="flex h-12 w-12 items-center justify-center rounded-lg border border-purple-400/50 text-purple-400 transition-colors duration-200 hover:border-purple-400 hover:bg-purple-400/10 hover:text-purple-300"
               >
                 {socialIcons[social.name]}
               </a>
