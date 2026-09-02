@@ -25,8 +25,8 @@ export const socialLinks = [
 export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/for-shippers", label: "For Shippers" },
-  { href: "/for-brokers", label: "For Brokers" },
+  { href: "/for-shippers", label: "Shippers" },
+  { href: "/for-brokers", label: "Brokers" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
