@@ -81,13 +81,13 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <Link
               href="/become-a-driver"
-              className="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:border-white/70 hover:bg-white/5"
+              className="inline-flex items-center justify-center rounded-full bg-purple-500 px-6 py-2.5 text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25"
             >
               Become a Driver
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-purple-500 px-6 py-2.5 text-sm font-semibold tracking-wide text-navy-950 transition-all duration-300 hover:bg-purple-400 hover:shadow-lg hover:shadow-purple-500/25"
+              className="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:border-white/70 hover:bg-white/5"
             >
               Request a Quote
             </Link>
@@ -152,16 +152,16 @@ export function Navbar() {
               );
             })}
             <Link
-              href="/contact"
-              className="mt-3 inline-flex items-center justify-center rounded-full bg-purple-500 px-6 py-3 text-sm font-semibold text-navy-950 transition-colors hover:bg-purple-400"
-            >
-              Request a Quote
-            </Link>
-            <Link
               href="/become-a-driver"
-              className="mt-2 inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/50"
+              className="mt-3 inline-flex items-center justify-center rounded-full bg-purple-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-purple-400"
             >
               Become a Driver
+            </Link>
+            <Link
+              href="/contact"
+              className="mt-2 inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/50"
+            >
+              Request a Quote
             </Link>
             <p className="mt-4 text-xs text-navy-300">
               {siteConfig.phone} &middot; {siteConfig.hoursShort}
