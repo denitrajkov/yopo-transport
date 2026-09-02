@@ -85,7 +85,7 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[420px] overflow-hidden rounded-3xl shadow-2xl shadow-navy-950/20">
             <Image
-              src="/images/yopo-our-story.png"
+              src="/images/yopo-our-story.jpg"
               alt="Freight trailers staged at a distribution yard"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
