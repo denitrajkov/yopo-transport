@@ -81,6 +81,36 @@ const reasons: Reason[] = [
       </svg>
     ),
   },
+  {
+    title: "Transparent Pricing",
+    description:
+      "Clear, upfront quotes with no hidden fees, so you know exactly what you're paying for before your freight ships.",
+    icon: (
+      <svg {...iconProps}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4 12l7.5-7.5a1.5 1.5 0 011.06-.44H18a1.5 1.5 0 011.5 1.5v5.44a1.5 1.5 0 01-.44 1.06L11.5 20"
+        />
+        <circle cx="15" cy="8" r="1.3" />
+      </svg>
+    ),
+  },
+  {
+    title: "Careful Carrier Vetting",
+    description:
+      "Every carrier in our network is vetted for safety, reliability, and performance, so your freight is in trusted hands.",
+    icon: (
+      <svg {...iconProps}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 3l7 3.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5L12 3z"
+        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 12l1.8 1.8L15 10" />
+      </svg>
+    ),
+  },
 ];
 
 export default function ForShippersPage() {
@@ -131,7 +161,7 @@ export default function ForShippersPage() {
             description="We built our operation around the details that make shipping stressful — so you don't have to worry about them."
             align="center"
           />
-          <div className="mt-14 grid gap-6 sm:grid-cols-2">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map((reason) => (
               <div
                 key={reason.title}

@@ -68,11 +68,35 @@ const features: Feature[] = [
       </svg>
     ),
   },
+  {
+    title: "Modern, Well-Maintained Fleet",
+    description:
+      "Our equipment is inspected and maintained to a high standard, reducing breakdowns and keeping your freight moving without unnecessary delays.",
+    icon: (
+      <svg {...iconProps}>
+        <rect x="2.5" y="9" width="12" height="7" rx="1" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14.5 11h3.2l3.3 3v2h-6.5" />
+        <circle cx="7" cy="17.5" r="1.6" />
+        <circle cx="16.5" cy="17.5" r="1.6" />
+      </svg>
+    ),
+  },
+  {
+    title: "Round-the-Clock Dispatch",
+    description:
+      "Our dispatch team is available around the clock to answer questions, address issues, and keep your shipment on track — nights and weekends included.",
+    icon: (
+      <svg {...iconProps}>
+        <circle cx="12" cy="12" r="8.5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5V12l3 2" />
+      </svg>
+    ),
+  },
 ];
 
 export function WhyChooseUs() {
   return (
-    <div className="grid gap-6 sm:grid-cols-2">
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {features.map((feature) => (
         <div
           key={feature.title}
