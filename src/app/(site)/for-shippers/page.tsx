@@ -137,7 +137,7 @@ export default function ForShippersPage() {
                 key={reason.title}
                 className="group rounded-2xl border border-purple-500/40 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-purple-400 transition-colors duration-500 group-hover:bg-purple-500 group-hover:text-navy-950">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600 transition-colors duration-500 group-hover:bg-purple-500 group-hover:text-white">
                   {reason.icon}
                 </div>
                 <h3 className="font-display mt-5 text-lg font-semibold text-navy-950">
