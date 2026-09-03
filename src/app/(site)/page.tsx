@@ -56,15 +56,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        <div
-          aria-hidden
-          className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-fade-in flex-col items-center gap-2 text-navy-200 lg:flex"
-          style={{ animationDelay: "0.6s" }}
-        >
-          <span className="text-[11px] uppercase tracking-[0.2em]">Scroll</span>
-          <span className="h-10 w-px bg-gradient-to-b from-navy-200 to-transparent" />
-        </div>
       </section>
 
       <TrustStrip />
