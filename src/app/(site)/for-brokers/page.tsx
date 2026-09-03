@@ -79,6 +79,36 @@ const reasons: Reason[] = [
       </svg>
     ),
   },
+  {
+    title: "Clean Safety & Compliance Record",
+    description:
+      "Fully insured and compliant, with a clean safety record — so you can confidently tender loads knowing your shipper relationship is protected.",
+    icon: (
+      <svg {...iconProps}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 3l7 3.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5L12 3z"
+        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 12l1.8 1.8L15 10" />
+      </svg>
+    ),
+  },
+  {
+    title: "Real-Time Load Updates",
+    description:
+      "Proactive status updates from pickup to delivery, so you're never left chasing a check call before it becomes a problem for your shipper.",
+    icon: (
+      <svg {...iconProps}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"
+        />
+        <circle cx="12" cy="12" r="2.75" />
+      </svg>
+    ),
+  },
 ];
 
 const bookingSteps = [
@@ -144,7 +174,7 @@ export default function ForBrokersPage() {
             description="We know your reputation rides on every load. Here's what brokers can expect when they book with Yopo Transport."
             align="center"
           />
-          <div className="mt-14 grid gap-6 sm:grid-cols-2">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map((reason) => (
               <div
                 key={reason.title}
