@@ -28,12 +28,12 @@ export const navLinks = [
   { href: "/for-shippers", label: "Shippers" },
   { href: "/for-brokers", label: "Brokers" },
   { href: "/blog", label: "Blog" },
+  { href: "/team", label: "Team" },
   { href: "/contact", label: "Contact" },
 ];
 
 // Shown in the footer only, not the main nav.
 export const footerOnlyLinks = [
-  { href: "/team", label: "Team" },
   { href: "/careers", label: "Careers" },
   { href: "/become-a-driver", label: "Become a Driver" },
 ];
