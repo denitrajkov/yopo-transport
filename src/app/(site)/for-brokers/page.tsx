@@ -269,15 +269,15 @@ export default function ForBrokersPage() {
             {capabilities.map((capability) => (
               <div
                 key={capability.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors duration-500 hover:border-purple-500/40"
+                className="rounded-2xl border border-transparent bg-white p-8 transition-colors duration-500 hover:border-purple-500/40"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/15 text-purple-300">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600">
                   {capability.icon}
                 </div>
-                <h3 className="font-display mt-6 text-xl font-semibold text-white">
+                <h3 className="font-display mt-6 text-xl font-semibold text-purple-800">
                   {capability.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-navy-200">
+                <p className="mt-3 text-sm leading-relaxed text-purple-700">
                   {capability.description}
                 </p>
                 {capability.locations ? (
@@ -285,7 +285,7 @@ export default function ForBrokersPage() {
                     {capability.locations.map((location) => (
                       <span
                         key={location}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-purple-400/30 px-3 py-1 text-xs font-medium text-purple-200"
+                        className="inline-flex items-center gap-1.5 rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700"
                       >
                         <svg
                           viewBox="0 0 24 24"
