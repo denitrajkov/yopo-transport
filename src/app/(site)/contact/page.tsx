@@ -52,7 +52,7 @@ export default function ContactPage() {
             Contact Us
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Request a Quote
+            Get a Quote
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             Tell us about your shipment and our team will follow up with a
