@@ -95,10 +95,6 @@ export default function ContactPage() {
                     </div>
                   ))}
                 </dl>
-                <p className="mt-6 text-xs text-navy-400">
-                  Placeholder contact information shown above — update with your
-                  company&rsquo;s real details.
-                </p>
               </div>
 
               <div className="rounded-2xl bg-navy-950 p-7">
