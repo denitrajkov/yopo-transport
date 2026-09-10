@@ -28,20 +28,33 @@ type Reason = {
 
 const reasons: Reason[] = [
   {
-    title: "Reliable Capacity",
+    title: "24/7 Dedicated Team",
     description:
-      "Consistent truck availability across regional and long-haul lanes, so your loads don't fall through at the last minute.",
+      "Our team is available 24/7 to provide support, monitor shipments, and ensure smooth communication from pickup to delivery.",
     icon: (
       <svg {...iconProps}>
-        <rect x="3" y="7" width="18" height="11" rx="1.5" />
-        <path strokeLinecap="round" d="M3 11h18" />
+        <circle cx="12" cy="12" r="8.5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5V12l3 2" />
       </svg>
     ),
   },
   {
-    title: "Responsive Communication",
+    title: "Reliable Transportation",
     description:
-      "Quick load confirmations and status updates from a team that actually answers the phone.",
+      "We provide reliable and efficient transportation solutions designed to keep your freight moving safely and on schedule.",
+    icon: (
+      <svg {...iconProps}>
+        <rect x="2.5" y="9" width="12" height="7" rx="1" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14.5 11h3.2l3.3 3v2h-6.5" />
+        <circle cx="7" cy="17.5" r="1.6" />
+        <circle cx="16.5" cy="17.5" r="1.6" />
+      </svg>
+    ),
+  },
+  {
+    title: "Clear Communication",
+    description:
+      "We believe communication is key. Our team keeps customers and partners informed throughout every step of the transportation process.",
     icon: (
       <svg {...iconProps}>
         <path
@@ -54,35 +67,9 @@ const reasons: Reason[] = [
     ),
   },
   {
-    title: "On-Time Performance",
+    title: "$250K Cargo Insurance",
     description:
-      "Dependable pickup and delivery windows that help protect your relationship with the shipper.",
-    icon: (
-      <svg {...iconProps}>
-        <circle cx="12" cy="12" r="8.5" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5V12l3 2" />
-      </svg>
-    ),
-  },
-  {
-    title: "Easy to Work With",
-    description:
-      "A straightforward booking process with minimal back-and-forth, so you can move on to your next load.",
-    icon: (
-      <svg {...iconProps}>
-        <circle cx="12" cy="12" r="8.5" />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M8.5 12.5l2.3 2.3L16 10"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Clean Safety & Compliance Record",
-    description:
-      "Fully insured and compliant, with a clean safety record — so you can confidently tender loads knowing your shipper relationship is protected.",
+      "Your freight is protected with up to $250,000 in cargo insurance, providing added peace of mind with every shipment.",
     icon: (
       <svg {...iconProps}>
         <path
@@ -95,17 +82,23 @@ const reasons: Reason[] = [
     ),
   },
   {
-    title: "Real-Time Load Updates",
+    title: "170+ Dry Vans",
     description:
-      "Proactive status updates from pickup to delivery, so you're never left chasing a check call before it becomes a problem for your shipper.",
+      "With a fleet of 170+ dry vans, we have the capacity to handle a wide range of freight transportation needs.",
     icon: (
       <svg {...iconProps}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"
-        />
-        <circle cx="12" cy="12" r="2.75" />
+        <rect x="3" y="7" width="18" height="11" rx="1.5" />
+        <path strokeLinecap="round" d="M3 11h18" />
+      </svg>
+    ),
+  },
+  {
+    title: "7,000+ Loads Annually",
+    description:
+      "Our team handles over 7,000 loads every year, demonstrating our experience, capacity, and commitment to reliable service.",
+    icon: (
+      <svg {...iconProps}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 20V11M10 20V5M16 20v-8M20 20v-4" />
       </svg>
     ),
   },
