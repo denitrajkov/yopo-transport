@@ -45,7 +45,11 @@ const reasons: Reason[] = [
     icon: (
       <svg {...iconProps}>
         <rect x="2.5" y="9" width="12" height="7" rx="1" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M14.5 11h3.2l3.3 3v2h-6.5" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M14.5 11h3.2l3.3 3v2h-6.5"
+        />
         <circle cx="7" cy="17.5" r="1.6" />
         <circle cx="16.5" cy="17.5" r="1.6" />
       </svg>
@@ -77,7 +81,11 @@ const reasons: Reason[] = [
           strokeLinejoin="round"
           d="M12 3l7 3.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5L12 3z"
         />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 12l1.8 1.8L15 10" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.5 12l1.8 1.8L15 10"
+        />
       </svg>
     ),
   },
@@ -98,9 +106,68 @@ const reasons: Reason[] = [
       "Our team handles over 7,000 loads every year, demonstrating our experience, capacity, and commitment to reliable service.",
     icon: (
       <svg {...iconProps}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 20V11M10 20V5M16 20v-8M20 20v-4" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4 20V11M10 20V5M16 20v-8M20 20v-4"
+        />
       </svg>
     ),
+  },
+];
+
+type Capability = {
+  title: string;
+  description: string;
+  icon: ReactNode;
+  locations?: string[];
+};
+
+const capabilities: Capability[] = [
+  {
+    title: "Recovery Drivers",
+    description:
+      "We have a dedicated team of company drivers available for recovery situations. If a booked truck experiences a breakdown or unexpected issue, our recovery drivers can step in to help keep your shipment moving and minimize delays.",
+    icon: (
+      <svg {...iconProps}>
+        <circle cx="12" cy="12" r="8.5" />
+        <circle cx="12" cy="12" r="2.5" />
+        <path
+          strokeLinecap="round"
+          d="M12 3.5v6M12 14.5v6M4.5 8.5l5 3M14.5 12.5l5-3"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Nationwide Coverage",
+    description:
+      "Our trucks operate across the entire United States, providing reliable freight transportation solutions wherever your business needs us.",
+    icon: (
+      <svg {...iconProps}>
+        <circle cx="12" cy="12" r="8.5" />
+        <path
+          strokeLinecap="round"
+          d="M3.5 12h17M12 3.5c2.5 2.4 3.8 5.3 3.8 8.5s-1.3 6.1-3.8 8.5c-2.5-2.4-3.8-5.3-3.8-8.5S9.5 5.9 12 3.5z"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Cross-Dock Services",
+    description:
+      "We offer convenient cross-dock solutions through our facilities in Markham, Illinois and Waterloo, Iowa. Our cross-dock locations help customers efficiently transfer, consolidate, and redistribute freight while reducing handling time and keeping shipments moving.",
+    icon: (
+      <svg {...iconProps}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 21V10l9-6 9 6v11"
+        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 21v-7h6v7" />
+      </svg>
+    ),
+    locations: ["Markham, IL", "Waterloo, IA"],
   },
 ];
 
@@ -146,7 +213,7 @@ export default function ForBrokersPage() {
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Button href="/contact" variant="primary">
-              Book a Load
+              Get a Quote
             </Button>
             <a
               href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}
@@ -182,6 +249,57 @@ export default function ForBrokersPage() {
                 <p className="mt-2 text-sm leading-relaxed text-navy-700">
                   {reason.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional capabilities */}
+      <section className="bg-navy-950 py-24 sm:py-28">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Built to Support Your Freight"
+            title="More Ways We Keep Loads Moving"
+            description="Beyond day-to-day capacity, here's what backs every load we haul for you."
+            align="center"
+            tone="light"
+          />
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            {capabilities.map((capability) => (
+              <div
+                key={capability.title}
+                className="rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors duration-500 hover:border-purple-500/40"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/15 text-purple-300">
+                  {capability.icon}
+                </div>
+                <h3 className="font-display mt-6 text-xl font-semibold text-white">
+                  {capability.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-navy-200">
+                  {capability.description}
+                </p>
+                {capability.locations ? (
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {capability.locations.map((location) => (
+                      <span
+                        key={location}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-purple-400/30 px-3 py-1 text-xs font-medium text-purple-200"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="h-3 w-3"
+                          aria-hidden
+                        >
+                          <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+                        </svg>
+                        {location}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             ))}
           </div>
