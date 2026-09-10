@@ -350,10 +350,6 @@ export default function ForBrokersPage() {
                 </div>
               ))}
             </dl>
-            <p className="mt-6 text-xs text-navy-400">
-              Placeholder carrier details shown above — update with your
-              company&rsquo;s real MC/DOT numbers and insurance information.
-            </p>
           </div>
         </div>
       </section>
