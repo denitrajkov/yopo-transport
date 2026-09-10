@@ -269,9 +269,9 @@ export default function ForBrokersPage() {
             {capabilities.map((capability) => (
               <div
                 key={capability.title}
-                className="rounded-2xl border border-transparent bg-white p-8 transition-colors duration-500 hover:border-purple-500/40"
+                className="group rounded-2xl border border-transparent bg-white p-8 shadow-lg shadow-navy-950/20 transition-all duration-500 hover:-translate-y-1 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-600 transition-colors duration-500 group-hover:bg-purple-500 group-hover:text-white">
                   {capability.icon}
                 </div>
                 <h3 className="font-display mt-6 text-xl font-semibold text-purple-800">
