@@ -158,7 +158,21 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col items-center justify-between gap-4 py-6 text-xs text-navy-400 sm:flex-row">
           <p>&copy; {year} Yopo Transport. All rights reserved.</p>
-          <p>Designed by Yopo Development.</p>
+          <div className="flex items-center gap-5">
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-purple-400"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms-and-conditions"
+              className="transition-colors hover:text-purple-400"
+            >
+              Terms &amp; Conditions
+            </Link>
+            <p>Designed by Yopo Development.</p>
+          </div>
         </div>
       </div>
     </footer>
