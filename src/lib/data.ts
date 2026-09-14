@@ -357,7 +357,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "team-3",
     name: "Larry Rickus",
-    role: "Safety Manager",
+    role: "General Manager",
     department: "Safety & Compliance",
     phone: siteConfig.phone,
     extension: "740",
@@ -367,7 +367,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "team-12",
     name: "Angel Markov",
-    role: "Safety Coordinator",
+    role: "Safety Manager",
     department: "Safety & Compliance",
     phone: siteConfig.phone,
     extension: "430",
