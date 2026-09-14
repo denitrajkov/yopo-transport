@@ -360,7 +360,7 @@ export const teamMembers: TeamMember[] = [
     role: "Safety Manager",
     department: "Safety & Compliance",
     phone: siteConfig.phone,
-    extension: "770",
+    extension: "740",
     email: "Larry@yopoexpedite.com",
     bio: "[Placeholder bio] Leads safety compliance and driver standards, keeping every shipment aligned with best practices.",
   },
