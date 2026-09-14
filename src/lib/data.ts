@@ -17,7 +17,7 @@ export const siteConfig = {
 
 // Placeholder social links — replace with your real profile URLs.
 export const socialLinks = [
-  { name: "Facebook", href: "#" },
+  { name: "Facebook", href: "https://www.facebook.com/yopoexpediteinc" },
   { name: "Instagram", href: "https://www.instagram.com/yopoexpedite/" },
   { name: "LinkedIn", href: "https://www.linkedin.com/company/yopo-expedite-inc" },
 ];

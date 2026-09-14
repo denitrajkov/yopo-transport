@@ -71,11 +71,24 @@ export default function CareersPage() {
             description="Browse our current openings below. Click a role to see full details and how to apply."
           />
 
-          <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-            {jobs.map((job) => (
-              <JobCard key={job.slug} job={job} />
-            ))}
-          </div>
+          {jobs.length > 0 ? (
+            <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+              {jobs.map((job) => (
+                <JobCard key={job.slug} job={job} />
+              ))}
+            </div>
+          ) : (
+            <div className="mt-14 rounded-2xl border border-navy-900/10 bg-navy-50 p-10 text-center sm:p-14">
+              <h3 className="font-display text-xl font-semibold text-navy-950">
+                No Open Positions Right Now
+              </h3>
+              <p className="mx-auto mt-3 max-w-xl text-balance text-sm leading-relaxed text-navy-700 sm:text-base">
+                We don&rsquo;t have any open positions at the moment, but
+                we&rsquo;re always growing. Check back soon, or send us your
+                resume below and we&rsquo;ll keep it on file.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
