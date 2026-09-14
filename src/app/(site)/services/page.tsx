@@ -9,7 +9,7 @@ import { services } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Yopo Transport's freight transportation services, including Full Truckload, Less Than Truckload, regional and long-distance transportation, and logistics solutions.",
+    "Explore Yopo Expedite's freight transportation services, including Full Truckload, Less Than Truckload, regional and long-distance transportation, and logistics solutions.",
 };
 
 export default function ServicesPage() {

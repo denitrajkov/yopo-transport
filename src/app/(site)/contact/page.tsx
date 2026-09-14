@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contact & Request a Quote",
   description:
-    "Contact Yopo Transport or request a freight transportation quote. Our team will respond with a custom transportation plan.",
+    "Contact Yopo Expedite or request a freight transportation quote. Our team will respond with a custom transportation plan.",
 };
 
 const contactDetails = [
@@ -39,7 +39,7 @@ export default function ContactPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/yopo-our-story-draft.png"
-            alt="Yopo Transport freight trailers staged at the distribution yard"
+            alt="Yopo Expedite freight trailers staged at the distribution yard"
             fill
             priority
             sizes="100vw"
@@ -135,7 +135,7 @@ export default function ContactPage() {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              title="Yopo Transport location on Google Maps"
+              title="Yopo Expedite location on Google Maps"
               className="h-[320px] w-full border-0 sm:h-[440px]"
             />
           </div>

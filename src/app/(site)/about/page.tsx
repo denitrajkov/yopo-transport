@@ -8,7 +8,7 @@ import { coreValues } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Yopo Transport's mission, values, and commitment to safe, reliable freight transportation across the United States.",
+    "Learn about Yopo Expedite's mission, values, and commitment to safe, reliable freight transportation across the United States.",
 };
 
 const commitments = [
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/trucks.png"
-            alt="Fleet of Yopo Transport trucks parked at the distribution yard"
+            alt="Fleet of Yopo Expedite trucks parked at the distribution yard"
             fill
             priority
             sizes="100vw"
@@ -46,7 +46,7 @@ export default function AboutPage() {
         </div>
         <div className="container-page relative">
           <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-purple-300">
-            About Yopo Transport
+            About Yopo Expedite
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
             A Transportation Company Built on Trust and Attention to Detail
@@ -60,11 +60,11 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Our Story"
-              title="Why We Started Yopo Transport"
+              title="Why We Started Yopo Expedite"
             />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-navy-700">
               <p>
-                Yopo Transport was founded on a simple belief: shipping freight
+                Yopo Expedite was founded on a simple belief: shipping freight
                 shouldn&rsquo;t mean losing visibility, sacrificing
                 communication, or wondering whether your delivery will actually
                 arrive on time.

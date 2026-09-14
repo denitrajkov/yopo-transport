@@ -5,7 +5,7 @@ import { BecomeDriverForm } from "@/components/BecomeDriverForm";
 export const metadata: Metadata = {
   title: "Become a Driver",
   description:
-    "Apply to drive for Yopo Transport. Submit your information and CDL to be considered for open driving positions.",
+    "Apply to drive for Yopo Expedite. Submit your information and CDL to be considered for open driving positions.",
 };
 
 const highlights = [
@@ -21,7 +21,7 @@ export default function BecomeADriverPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/yopo-truck.png"
-            alt="Yopo Transport driver's truck on the road"
+            alt="Yopo Expedite driver's truck on the road"
             fill
             priority
             sizes="100vw"
@@ -34,7 +34,7 @@ export default function BecomeADriverPage() {
             Become a Driver
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Drive With Yopo Transport
+            Drive With Yopo Expedite
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             Tell us about yourself and upload your CDL to be considered for

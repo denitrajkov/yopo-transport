@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "How Fleet Management Software Helps Transportation Companies Reduce Costs",
     category: "Fleet Management",
-    author: "Yopo Transport Fleet Solutions Team",
+    author: "Yopo Expedite Fleet Solutions Team",
     date: "2026-08-18",
     readingTime: "7 min read",
     image:
@@ -109,7 +109,7 @@ export const blogPosts: BlogPost[] = [
     slug: "gps-fleet-tracking-improves-driver-safety",
     title: "5 Ways GPS Fleet Tracking Improves Driver Safety",
     category: "Safety",
-    author: "Yopo Transport Safety Team",
+    author: "Yopo Expedite Safety Team",
     date: "2026-08-04",
     readingTime: "6 min read",
     image:
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
     slug: "complete-guide-to-fleet-management-systems",
     title: "The Complete Guide to Fleet Management Systems",
     category: "Fleet Management",
-    author: "Yopo Transport Editorial Team",
+    author: "Yopo Expedite Editorial Team",
     date: "2026-07-21",
     readingTime: "10 min read",
     image:
@@ -262,7 +262,7 @@ export const blogPosts: BlogPost[] = [
     slug: "route-optimization-reduce-fuel-costs",
     title: "How Route Optimization Can Reduce Fuel Costs",
     category: "Fuel & Costs",
-    author: "Yopo Transport Fleet Solutions Team",
+    author: "Yopo Expedite Fleet Solutions Team",
     date: "2026-07-07",
     readingTime: "6 min read",
     image:
@@ -328,7 +328,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Why Real-Time Fleet Visibility Matters for Modern Transportation Companies",
     category: "Transportation",
-    author: "Yopo Transport Operations Team",
+    author: "Yopo Expedite Operations Team",
     date: "2026-06-23",
     readingTime: "6 min read",
     image:
@@ -393,7 +393,7 @@ export const blogPosts: BlogPost[] = [
     slug: "preventive-maintenance-reduces-downtime",
     title: "Fleet Maintenance: How Preventive Maintenance Reduces Downtime",
     category: "Maintenance",
-    author: "Yopo Transport Fleet Operations Team",
+    author: "Yopo Expedite Fleet Operations Team",
     date: "2026-06-09",
     readingTime: "7 min read",
     image:
@@ -459,7 +459,7 @@ export const blogPosts: BlogPost[] = [
     slug: "technology-transforming-trucking-industry",
     title: "How Technology Is Transforming the Trucking Industry",
     category: "Technology",
-    author: "Yopo Transport Editorial Team",
+    author: "Yopo Expedite Editorial Team",
     date: "2026-05-26",
     readingTime: "7 min read",
     image:
@@ -525,7 +525,7 @@ export const blogPosts: BlogPost[] = [
     slug: "role-of-telematics-in-fleet-management",
     title: "The Role of Telematics in Modern Fleet Management",
     category: "Technology",
-    author: "Yopo Transport Technology Team",
+    author: "Yopo Expedite Technology Team",
     date: "2026-05-12",
     readingTime: "6 min read",
     image:
@@ -591,7 +591,7 @@ export const blogPosts: BlogPost[] = [
     slug: "improve-fleet-efficiency",
     title: "How Transportation Companies Can Improve Fleet Efficiency",
     category: "Logistics",
-    author: "Yopo Transport Operations Team",
+    author: "Yopo Expedite Operations Team",
     date: "2026-04-28",
     readingTime: "7 min read",
     image:
@@ -649,7 +649,7 @@ export const blogPosts: BlogPost[] = [
     slug: "dispatch-software-streamlines-fleet-operations",
     title: "How Modern Dispatch Software Streamlines Daily Fleet Operations",
     category: "Dispatch",
-    author: "Yopo Transport Dispatch Team",
+    author: "Yopo Expedite Dispatch Team",
     date: "2026-04-14",
     readingTime: "6 min read",
     image:

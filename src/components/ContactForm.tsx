@@ -20,19 +20,21 @@ export function ContactForm() {
     setStatus("submitting");
 
     const form = event.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const formData = new FormData(form);
 
     try {
-      // TODO: Connect to an email service or backend API route, e.g.:
-      // await fetch("/api/quote-request", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(data),
-      // });
-      console.log("Quote request submitted (frontend-only placeholder):", data);
-      await new Promise((resolve) => setTimeout(resolve, 600));
-      form.reset();
-      router.push("/contact/thank-you");
+      const response = await fetch("/api/quote-request", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        form.reset();
+        router.push("/contact/thank-you");
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }

@@ -9,7 +9,7 @@ export default function DriverThankYouPage() {
   return (
     <ThankYou
       title="Application Received"
-      message="Thank you for applying to drive with Yopo Transport. Our team will review your application and reach out to you shortly."
+      message="Thank you for applying to drive with Yopo Expedite. Our team will review your application and reach out to you shortly."
     />
   );
 }

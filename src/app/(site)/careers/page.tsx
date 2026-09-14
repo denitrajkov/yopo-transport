@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Explore open positions at Yopo Transport and join a team focused on safe, reliable freight transportation across the United States.",
+    "Explore open positions at Yopo Expedite and join a team focused on safe, reliable freight transportation across the United States.",
 };
 
 export default function CareersPage() {
@@ -34,7 +34,7 @@ export default function CareersPage() {
             Careers
           </span>
           <h1 className="font-display text-balance max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Build Your Career With Yopo Transport
+            Build Your Career With Yopo Expedite
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             We&rsquo;re growing our team of dispatchers, safety professionals,

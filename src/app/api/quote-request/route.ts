@@ -21,36 +21,33 @@ export async function POST(request: Request) {
   try {
     const formData = await request.formData();
 
-    const firstName = escapeHtml(formData.get("firstName"));
-    const lastName = escapeHtml(formData.get("lastName"));
+    const name = escapeHtml(formData.get("name"));
+    const company = escapeHtml(formData.get("company"));
     const email = escapeHtml(formData.get("email"));
     const phone = escapeHtml(formData.get("phone"));
-    const dateOfBirth = escapeHtml(formData.get("dateOfBirth"));
-    const experience = escapeHtml(formData.get("experience"));
-
-    const attachments = [];
-    const cdl = formData.get("cdl");
-    if (cdl instanceof File && cdl.size > 0) {
-      const buffer = Buffer.from(await cdl.arrayBuffer());
-      attachments.push({ filename: cdl.name, content: buffer });
-    }
+    const pickupLocation = escapeHtml(formData.get("pickupLocation"));
+    const deliveryLocation = escapeHtml(formData.get("deliveryLocation"));
+    const service = escapeHtml(formData.get("service"));
+    const message = escapeHtml(formData.get("message"));
 
     const { error } = await resend.emails.send({
       from: "Yopo Expedite <applications@yopotransport.com>",
-      // TEMP: route to deni@yopoexpedite.com for testing; switch back to
-      // siteConfig.careersEmail once verified.
+      // TEMP: route to deni@yopoexpedite.com for testing; switch to a
+      // confirmed inbox (e.g. siteConfig.email) once verified.
       to: "deni@yopoexpedite.com",
       replyTo: String(formData.get("email") ?? ""),
-      subject: `New Driver Application: ${firstName} ${lastName}`,
+      subject: `New Quote Request: ${name}${company ? ` (${company})` : ""}`,
       html: `
-        <h2>New Driver Application</h2>
-        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+        <h2>New Quote Request</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Company:</strong> ${company || "—"}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Date of Birth:</strong> ${dateOfBirth}</p>
-        <p><strong>Experience:</strong> ${experience}</p>
+        <p><strong>Pickup Location:</strong> ${pickupLocation || "—"}</p>
+        <p><strong>Delivery Location:</strong> ${deliveryLocation || "—"}</p>
+        <p><strong>Service Needed:</strong> ${service || "—"}</p>
+        <p><strong>Message:</strong><br>${message ? message.replace(/\n/g, "<br>") : "—"}</p>
       `,
-      attachments,
     });
 
     if (error) {
@@ -60,7 +57,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true });
   } catch (err) {
-    console.error("driver-application route error:", err);
+    console.error("quote-request route error:", err);
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }

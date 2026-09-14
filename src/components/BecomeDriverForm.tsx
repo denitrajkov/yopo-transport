@@ -10,14 +10,6 @@ const inputStyles =
 
 const labelStyles = "mb-1.5 block text-sm font-medium text-navy-900";
 
-const experienceOptions = [
-  "Less than 1 year",
-  "1–2 years",
-  "3–5 years",
-  "6–10 years",
-  "10+ years",
-];
-
 export function BecomeDriverForm() {
   const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
@@ -127,24 +119,21 @@ export function BecomeDriverForm() {
         </div>
         <div>
           <label htmlFor="experience" className={labelStyles}>
-            Driving Experience<span className="text-purple-600"> *</span>
+            Years of Driving Experience
+            <span className="text-purple-600"> *</span>
           </label>
-          <select
+          <input
             id="experience"
             name="experience"
+            type="number"
             required
-            defaultValue=""
+            min={0}
+            max={60}
+            step={1}
+            inputMode="numeric"
             className={inputStyles}
-          >
-            <option value="" disabled>
-              Select years of experience
-            </option>
-            {experienceOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
+            placeholder="e.g. 5"
+          />
         </div>
       </div>
 
@@ -171,7 +160,7 @@ export function BecomeDriverForm() {
           className="mt-1 h-4 w-4 shrink-0 rounded border-navy-900/30 text-purple-500 focus:ring-2 focus:ring-purple-500/40"
         />
         <label htmlFor="consent" className="text-sm leading-relaxed text-navy-700">
-          I agree that Yopo Transport may collect and use the information
+          I agree that Yopo Expedite may collect and use the information
           provided in this form to review my application.
           <span className="text-purple-600"> *</span>
         </label>

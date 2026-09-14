@@ -46,7 +46,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/images/yopo-logo.png"
-            alt="Yopo Transport"
+            alt="Yopo Expedite"
             width={140}
             height={140}
             priority

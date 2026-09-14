@@ -8,7 +8,7 @@ import { teamDepartments, teamMembers } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet the Yopo Transport team behind our freight transportation and logistics operations.",
+    "Meet the Yopo Expedite team behind our freight transportation and logistics operations.",
 };
 
 export default function TeamPage() {

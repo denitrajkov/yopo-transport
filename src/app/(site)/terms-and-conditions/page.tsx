@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
-    "The terms and conditions that govern your use of the Yopo Transport website and services.",
+    "The terms and conditions that govern your use of the Yopo Expedite website and services.",
 };
 
 const lastUpdated = "September 11, 2026";

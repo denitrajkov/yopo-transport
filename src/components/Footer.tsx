@@ -55,13 +55,13 @@ export function Footer() {
           <Link href="/" className="flex items-center gap-2.5">
             <Image
               src="/images/yopo-logo.png"
-              alt="Yopo Transport"
+              alt="Yopo Expedite"
               width={112}
               height={112}
               className="h-14 w-14 rounded-lg"
             />
             <span className="font-display text-xl font-semibold tracking-tight text-white">
-              Yopo <span className="text-purple-400">Transport</span>
+              Yopo <span className="text-purple-400">Expedite</span>
             </span>
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-300">
@@ -157,7 +157,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col items-center justify-between gap-4 py-6 text-xs text-navy-400 sm:flex-row">
-          <p>&copy; {year} Yopo Transport. All rights reserved.</p>
+          <p>&copy; {year} Yopo Expedite. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <Link
               href="/privacy-policy"

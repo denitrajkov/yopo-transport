@@ -41,7 +41,7 @@ export default function HomePage() {
               Freight Moved With Precision, Across the Country
             </h1>
             <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
-              Yopo Transport delivers dependable freight transportation and
+              Yopo Expedite delivers dependable freight transportation and
               logistics solutions for businesses that need their shipments
               handled with care, communicated clearly, and delivered on
               schedule.
@@ -66,7 +66,7 @@ export default function HomePage() {
           <div className="relative order-2 h-[420px] overflow-hidden rounded-3xl shadow-2xl shadow-navy-950/20 lg:order-1">
             <Image
               src="/images/yopo-truck.webp"
-              alt="Yopo Transport truck parked outside the company office"
+              alt="Yopo Expedite truck parked outside the company office"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
@@ -74,9 +74,9 @@ export default function HomePage() {
           </div>
           <div className="order-1 lg:order-2">
             <SectionHeading
-              eyebrow="About Yopo Transport"
+              eyebrow="About Yopo Expedite"
               title="A Transportation Partner Built Around Reliability"
-              description="Yopo Transport was founded to bring a more attentive, professional standard to freight transportation — one where communication is clear, timelines are honored, and every shipment gets the attention it deserves."
+              description="Yopo Expedite was founded to bring a more attentive, professional standard to freight transportation — one where communication is clear, timelines are honored, and every shipment gets the attention it deserves."
             />
             <ul className="mt-8 space-y-4">
               {[
@@ -224,7 +224,7 @@ export default function HomePage() {
         />
         <div className="container-page relative">
           <SectionHeading
-            eyebrow="Why Choose Yopo Transport"
+            eyebrow="Why Choose Yopo Expedite"
             title="Freight Handled the Way It Should Be"
             description="We built our operation around the details that make freight transportation stressful — so you don't have to worry about them."
             align="center"
@@ -243,7 +243,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="How It Works"
             title="A Simple, Transparent Process"
-            description="From your first request to final delivery, here's what working with Yopo Transport looks like."
+            description="From your first request to final delivery, here's what working with Yopo Expedite looks like."
             align="center"
           />
           <div className="mt-14">

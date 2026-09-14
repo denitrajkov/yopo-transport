@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Learn how Yopo Transport collects, uses, and protects the personal information you share with us.",
+    "Learn how Yopo Expedite collects, uses, and protects the personal information you share with us.",
 };
 
 const lastUpdated = "September 11, 2026";

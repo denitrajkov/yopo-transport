@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "For Brokers",
   description:
-    "Freight broker resources for Yopo Transport — reliable capacity, responsive dispatch, and a straightforward booking process.",
+    "Freight broker resources for Yopo Expedite — reliable capacity, responsive dispatch, and a straightforward booking process.",
 };
 
 const iconProps = {
@@ -231,7 +231,7 @@ export default function ForBrokersPage() {
           <SectionHeading
             eyebrow="Why Brokers Work With Us"
             title="Capacity You Can Depend On"
-            description="We know your reputation rides on every load. Here's what brokers can expect when they book with Yopo Transport."
+            description="We know your reputation rides on every load. Here's what brokers can expect when they book with Yopo Expedite."
             align="center"
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

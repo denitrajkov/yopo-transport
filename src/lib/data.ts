@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "Yopo Transport",
+  name: "Yopo Expedite",
   siteUrl: "https://www.yopotransport.com",
   tagline: "Freight Moved With Precision",
   description:
-    "Yopo Transport delivers premium freight transportation and logistics solutions across the United States, built on reliability, safety, and dedicated service.",
+    "Yopo Expedite delivers premium freight transportation and logistics solutions across the United States, built on reliability, safety, and dedicated service.",
   // Placeholder contact details — replace with real company information.
   phone: "+1 708 550 4407",
-  email: "contact@yopotransport.com",
+  email: "safety@yopoexpedite.com",
   careersEmail: "careers@yopotransport.com",
   address: "15131 Kedzie Ave, Markham, IL 60248",
   hoursShort: "Mon–Fri, 7am–7pm CT",
@@ -153,7 +153,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "testimonial-1",
     quote:
-      "Yopo Transport has become our go-to carrier for time-sensitive freight. Their dispatch team communicates proactively, and we've never had a shipment arrive without warning if something changed.",
+      "Yopo Expedite has become our go-to carrier for time-sensitive freight. Their dispatch team communicates proactively, and we've never had a shipment arrive without warning if something changed.",
     name: "Marcus Reyes",
     role: "Operations Manager, Ridgeline Building Supply",
   },
@@ -167,7 +167,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "testimonial-3",
     quote:
-      "We switched most of our regional freight to Yopo Transport last year and haven't looked back. On-time performance has been consistently strong.",
+      "We switched most of our regional freight to Yopo Expedite last year and haven't looked back. On-time performance has been consistently strong.",
     name: "Carlos Medina",
     role: "Supply Chain Manager, Pinnacle Industrial Supply",
   },
@@ -188,7 +188,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "testimonial-6",
     quote:
-      "We ship a lot of LTL freight, and Yopo Transport has been transparent about pricing and timelines every step of the way.",
+      "We ship a lot of LTL freight, and Yopo Expedite has been transparent about pricing and timelines every step of the way.",
     name: "Priya Nair",
     role: "Procurement Lead, Summit Retail Group",
   },
@@ -209,7 +209,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "testimonial-9",
     quote:
-      "We've worked with several carriers over the years, and Yopo Transport is one of the few that treats every shipment like it matters, big or small.",
+      "We've worked with several carriers over the years, and Yopo Expedite is one of the few that treats every shipment like it matters, big or small.",
     name: "Grant Whitmore",
     role: "General Manager, Whitmore & Sons Distribution",
   },
