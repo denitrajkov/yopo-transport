@@ -317,7 +317,6 @@ export type TeamMember = {
   phone: string;
   extension?: string;
   email: string;
-  bio: string;
 };
 
 // Placeholder team members — replace with real staff information and photos.
@@ -332,7 +331,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "100",
     email: "goran@yopoexpedite.com",
-    bio: "[Placeholder bio] Oversees company strategy and operations, ensuring every customer receives dependable, high-quality service.",
   },
   {
     id: "team-2",
@@ -342,7 +340,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "233",
     email: "antonio@yopoexpedite.com",
-    bio: "[Placeholder bio] Manages day-to-day logistics operations, coordinating carriers and routes to keep freight moving on schedule.",
   },
   {
     id: "team-6",
@@ -352,7 +349,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "210",
     email: "matt@yopoexpedite.com",
-    bio: "[Placeholder bio] Coordinates real-time dispatch and driver communication to keep shipments on track.",
   },
   {
     id: "team-3",
@@ -362,7 +358,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "740",
     email: "Larry@yopoexpedite.com",
-    bio: "[Placeholder bio] Leads safety compliance and driver standards, keeping every shipment aligned with best practices.",
   },
   {
     id: "team-12",
@@ -374,7 +369,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "430",
     email: "angel@yopoexpedite.com",
-    bio: "[Placeholder bio] Supports driver safety training and monitors compliance across the fleet.",
   },
   {
     id: "team-13",
@@ -384,7 +378,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "560",
     email: "ace@yopoexpedite.com",
-    bio: "[Placeholder bio] Maintains DOT compliance records and prepares the fleet for inspections and audits.",
   },
    {
     id: "team-14",
@@ -394,7 +387,6 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "120",
     email: "deni@yopoexpedite.com",
-    bio: "[Placeholder bio] Maintains DOT compliance records and prepares the fleet for inspections and audits.",
   },
 ];
 
