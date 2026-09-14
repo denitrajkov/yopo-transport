@@ -54,7 +54,7 @@ export function Footer() {
         <div>
           <Link href="/" className="flex items-center gap-2.5">
             <Image
-              src="/images/yopo-logo.png"
+              src="/images/yopo-logo.jpeg"
               alt="Yopo Expedite"
               width={112}
               height={112}
