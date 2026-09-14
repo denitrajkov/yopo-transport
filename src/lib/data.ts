@@ -386,6 +386,16 @@ export const teamMembers: TeamMember[] = [
     email: "ace@yopoexpedite.com",
     bio: "[Placeholder bio] Maintains DOT compliance records and prepares the fleet for inspections and audits.",
   },
+   {
+    id: "team-14",
+    name: "Deni Trajkov",
+    role: "Safety Coordinator",
+    department: "Safety & Compliance",
+    phone: siteConfig.phone,
+    extension: "120",
+    email: "deni@yopoexpedite.com",
+    bio: "[Placeholder bio] Maintains DOT compliance records and prepares the fleet for inspections and audits.",
+  },
 ];
 
 export const serviceOptions = [
