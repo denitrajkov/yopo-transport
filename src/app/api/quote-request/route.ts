@@ -32,9 +32,7 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: "Yopo Expedite <applications@yopotransport.com>",
-      // TEMP: route to deni@yopoexpedite.com for testing; switch to a
-      // confirmed inbox (e.g. siteConfig.email) once verified.
-      to: "deni@yopoexpedite.com",
+      to: "safety@yopoexpedite.com",
       replyTo: String(formData.get("email") ?? ""),
       subject: `New Quote Request: ${name}${company ? ` (${company})` : ""}`,
       html: `

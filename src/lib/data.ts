@@ -299,15 +299,13 @@ export const coreValues: ValueItem[] = [
 export type TeamDepartment =
   | "CEO"
   | "Dispatch"
-  | "Safety & Compliance"
-  | "Accounting & Finance";
+  | "Safety & Compliance";
 
 // Display order for team departments on the Team page.
 export const teamDepartments: TeamDepartment[] = [
   "CEO",
   "Dispatch",
   "Safety & Compliance",
-  "Accounting & Finance",
 ];
 
 export type TeamMember = {
@@ -315,8 +313,9 @@ export type TeamMember = {
   name: string;
   role: string;
   department: TeamDepartment;
-  image: string;
+  image?: string;
   phone: string;
+  extension?: string;
   email: string;
   bio: string;
 };
@@ -331,6 +330,7 @@ export const teamMembers: TeamMember[] = [
     image:
       "/images/goranvidenov.png",
     phone: siteConfig.phone,
+    extension: "100",
     email: "goran@yopoexpedite.com",
     bio: "[Placeholder bio] Oversees company strategy and operations, ensuring every customer receives dependable, high-quality service.",
   },
@@ -339,9 +339,8 @@ export const teamMembers: TeamMember[] = [
     name: "Antonio Andonov",
     role: "Dispatch Lead",
     department: "Dispatch",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
+    extension: "233",
     email: "antonio@yopoexpedite.com",
     bio: "[Placeholder bio] Manages day-to-day logistics operations, coordinating carriers and routes to keep freight moving on schedule.",
   },
@@ -350,9 +349,8 @@ export const teamMembers: TeamMember[] = [
     name: "Martin Mitkovski",
     role: "Dispatch Lead",
     department: "Dispatch",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
+    extension: "210",
     email: "matt@yopoexpedite.com",
     bio: "[Placeholder bio] Coordinates real-time dispatch and driver communication to keep shipments on track.",
   },
@@ -361,9 +359,8 @@ export const teamMembers: TeamMember[] = [
     name: "Larry Rickus",
     role: "Safety Manager",
     department: "Safety & Compliance",
-    image:
-      "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
+    extension: "770",
     email: "Larry@yopoexpedite.com",
     bio: "[Placeholder bio] Leads safety compliance and driver standards, keeping every shipment aligned with best practices.",
   },
@@ -372,9 +369,8 @@ export const teamMembers: TeamMember[] = [
     name: "Angel Markov",
     role: "Safety Coordinator",
     department: "Safety & Compliance",
-    image:
-      "https://images.unsplash.com/photo-1780732997580-df3992363434?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
+    extension: "140",
     email: "angel@yopoexpedite.com",
     bio: "[Placeholder bio] Supports driver safety training and monitors compliance across the fleet.",
   },
@@ -383,44 +379,10 @@ export const teamMembers: TeamMember[] = [
     name: "Aleksandar Likarski",
     role: "Safety Coordinator",
     department: "Safety & Compliance",
-    image:
-      "https://images.unsplash.com/photo-1609371497456-3a55a205d5eb?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
+    extension: "150",
     email: "ace@yopoexpedite.com",
     bio: "[Placeholder bio] Maintains DOT compliance records and prepares the fleet for inspections and audits.",
-  },
-  {
-    id: "team-7",
-    name: "[Full Name]",
-    role: "[Staff Accountant]",
-    department: "Accounting & Finance",
-    image:
-      "https://images.unsplash.com/photo-1573497491765-dccce02b29df?q=80&w=800&auto=format&fit=crop",
-    phone: siteConfig.phone,
-    email: "accounting@yopoexpedite.com",
-    bio: "[Placeholder bio] Manages billing, carrier settlements, and day-to-day accounting to keep the business running smoothly.",
-  },
-  {
-    id: "team-14",
-    name: "[Full Name]",
-    role: "[Accounts Payable Specialist]",
-    department: "Accounting & Finance",
-    image:
-      "https://images.unsplash.com/photo-1573497491207-618cc224f243?q=80&w=800&auto=format&fit=crop",
-    phone: siteConfig.phone,
-    email: "accounting@yopoexpedite.com",
-    bio: "[Placeholder bio] Manages vendor payments and carrier settlements to keep accounts current.",
-  },
-  {
-    id: "team-15",
-    name: "[Full Name]",
-    role: "[Billing Coordinator]",
-    department: "Accounting & Finance",
-    image:
-      "https://images.unsplash.com/photo-1758518729459-235dcaadc611?q=80&w=800&auto=format&fit=crop",
-    phone: siteConfig.phone,
-    email: "accounting@yopoexpedite.com",
-    bio: "[Placeholder bio] Prepares customer invoices and resolves billing questions quickly and accurately.",
   },
 ];
 

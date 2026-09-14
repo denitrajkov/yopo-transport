@@ -37,9 +37,7 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: "Yopo Expedite <applications@yopotransport.com>",
-      // TEMP: route to deni@yopoexpedite.com for testing; switch back to
-      // siteConfig.careersEmail once verified.
-      to: "deni@yopoexpedite.com",
+      to: "safety@yopoexpedite.com",
       replyTo: String(formData.get("email") ?? ""),
       subject: `New Driver Application: ${firstName} ${lastName}`,
       html: `

@@ -10,17 +10,34 @@ const iconProps = {
   "aria-hidden": true,
 };
 
+function getInitials(name: string) {
+  const parts = name.trim().split(/\s+/);
+  const initials = parts.length > 1
+    ? `${parts[0][0]}${parts[parts.length - 1][0]}`
+    : parts[0]?.slice(0, 2);
+  return initials?.toUpperCase() ?? "";
+}
+
 export function TeamCard({ member }: { member: TeamMember }) {
   return (
     <article className="group flex flex-col items-center rounded-2xl border border-purple-500/40 bg-white p-8 text-center transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10">
       <div className="relative h-40 w-40 overflow-hidden rounded-full ring-4 ring-purple-500/10">
-        <Image
-          src={member.image}
-          alt={`Portrait placeholder for ${member.name}`}
-          fill
-          sizes="160px"
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-        />
+        {member.image ? (
+          <Image
+            src={member.image}
+            alt={`Portrait of ${member.name}`}
+            fill
+            sizes="160px"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+        ) : (
+          <div
+            aria-hidden
+            className="font-display flex h-full w-full items-center justify-center bg-purple-500/10 text-3xl font-semibold text-purple-600 transition-colors duration-500 group-hover:bg-purple-500/15"
+          >
+            {getInitials(member.name)}
+          </div>
+        )}
       </div>
 
       <h3 className="font-display mt-5 text-lg font-semibold text-navy-950">
@@ -30,7 +47,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
 
       <div className="mt-5 flex w-full flex-col items-center gap-2.5 border-t border-navy-900/10 pt-5">
         <a
-          href={`tel:${member.phone.replace(/[^\d+]/g, "")}`}
+          href={`tel:${member.phone.replace(/[^\d+]/g, "")}${member.extension ? `,,${member.extension}` : ""}`}
           className="inline-flex items-center gap-2 text-sm text-navy-700 transition-colors hover:text-purple-600"
         >
           <svg {...iconProps}>
@@ -41,6 +58,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
             />
           </svg>
           {member.phone}
+          {member.extension ? ` ext. ${member.extension}` : ""}
         </a>
         <a
           href={`mailto:${member.email}`}
