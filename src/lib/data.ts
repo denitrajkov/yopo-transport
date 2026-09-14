@@ -397,7 +397,7 @@ export const teamMembers: TeamMember[] = [
     image:
       "https://images.unsplash.com/photo-1573497491765-dccce02b29df?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
-    email: "accounting@yopotransport.com",
+    email: "accounting@yopoexpedite.com",
     bio: "[Placeholder bio] Manages billing, carrier settlements, and day-to-day accounting to keep the business running smoothly.",
   },
   {
@@ -408,7 +408,7 @@ export const teamMembers: TeamMember[] = [
     image:
       "https://images.unsplash.com/photo-1573497491207-618cc224f243?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
-    email: "ap@yopotransport.com",
+    email: "accounting@yopoexpedite.com",
     bio: "[Placeholder bio] Manages vendor payments and carrier settlements to keep accounts current.",
   },
   {
@@ -419,7 +419,7 @@ export const teamMembers: TeamMember[] = [
     image:
       "https://images.unsplash.com/photo-1758518729459-235dcaadc611?q=80&w=800&auto=format&fit=crop",
     phone: siteConfig.phone,
-    email: "billing@yopotransport.com",
+    email: "accounting@yopoexpedite.com",
     bio: "[Placeholder bio] Prepares customer invoices and resolves billing questions quickly and accurately.",
   },
 ];
