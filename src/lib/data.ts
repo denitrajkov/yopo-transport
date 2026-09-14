@@ -7,7 +7,7 @@ export const siteConfig = {
   // Placeholder contact details — replace with real company information.
   phone: "+1 708 550 4407",
   email: "safety@yopoexpedite.com",
-  careersEmail: "careers@yopotransport.com",
+  careersEmail: "safety@yopoexpedite.com",
   address: "15131 Kedzie Ave, Markham, IL 60248",
   hoursShort: "Mon–Fri, 7am–7pm CT",
   mapsUrl:
@@ -333,9 +333,9 @@ export const teamMembers: TeamMember[] = [
     role: "PRESIDENT & CEO",
     department: "CEO",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+      "GoranVidenov.png",
     phone: siteConfig.phone,
-    email: "ceo@yopotransport.com",
+    email: "goran@yopoexpedite.com",
     bio: "[Placeholder bio] Oversees company strategy and operations, ensuring every customer receives dependable, high-quality service.",
   },
   {

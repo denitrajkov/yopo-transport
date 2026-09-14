@@ -165,12 +165,6 @@ export function Footer() {
             >
               Privacy Policy
             </Link>
-            <Link
-              href="/terms-and-conditions"
-              className="transition-colors hover:text-purple-400"
-            >
-              Terms &amp; Conditions
-            </Link>
             <p>Designed by Yopo Development.</p>
           </div>
         </div>

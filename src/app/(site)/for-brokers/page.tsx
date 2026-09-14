@@ -172,17 +172,26 @@ const capabilities: Capability[] = [
 ];
 
 const bookingSteps = [
-  "Send us the load details — origin, destination, equipment type, and pickup date.",
-  "Our dispatch team confirms capacity and rate, usually within the hour.",
-  "We assign a driver and share tracking details for the load.",
-  "Your load is delivered on schedule, with POD and paperwork sent promptly.",
-];
-
-const carrierInfo = [
-  { label: "MC Number", value: "[MC Number]" },
-  { label: "DOT Number", value: "[DOT Number]" },
-  { label: "Insurance Coverage", value: "[Insurance Coverage Details]" },
-  { label: "Payment Terms", value: "[Payment Terms / Quick Pay Details]" },
+  {
+    title: "Share Load Details",
+    description:
+      "Send us the load details — origin, destination, equipment type, and pickup date.",
+  },
+  {
+    title: "Get Confirmed",
+    description:
+      "Our dispatch team confirms capacity and rate, usually within the hour.",
+  },
+  {
+    title: "Driver Assigned",
+    description:
+      "We assign a driver and share tracking details for the load.",
+  },
+  {
+    title: "Delivered & Documented",
+    description:
+      "Your load is delivered on schedule, with POD and paperwork sent promptly.",
+  },
 ];
 
 export default function ForBrokersPage() {
@@ -306,51 +315,41 @@ export default function ForBrokersPage() {
         </div>
       </section>
 
-      {/* How to book a load + carrier info */}
+      {/* How to book a load */}
       <section className="bg-navy-50 py-24 sm:py-28">
-        <div className="container-page grid gap-10 lg:grid-cols-2 lg:gap-14">
-          <div className="rounded-2xl bg-navy-950 p-8 sm:p-10">
-            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-purple-300">
-              How It Works
-            </span>
-            <h2 className="font-display text-2xl font-semibold text-white">
-              Booking a Load Is Simple
-            </h2>
-            <ol className="mt-6 space-y-4">
-              {bookingSteps.map((step, index) => (
-                <li key={step} className="flex items-start gap-4">
-                  <span className="font-display flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-purple-500/15 text-sm font-semibold text-purple-400">
-                    {index + 1}
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="How It Works"
+            title="Booking a Load Is Simple"
+            description="From first contact to final delivery, here's what to expect when you book with Yopo Expedite."
+            align="center"
+          />
+          <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {bookingSteps.map((step, index) => (
+              <li
+                key={step.title}
+                className="group relative rounded-2xl border border-purple-500/40 bg-white p-7 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-purple-500/70 hover:shadow-xl hover:shadow-navy-900/10"
+              >
+                <span className="font-display text-4xl font-semibold text-purple-600/40 transition-colors duration-500 group-hover:text-purple-600/70">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="font-display mt-4 text-lg font-semibold text-navy-950">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy-700">
+                  {step.description}
+                </p>
+                {index < bookingSteps.length - 1 ? (
+                  <span
+                    aria-hidden
+                    className="absolute right-[-14px] top-1/2 hidden -translate-y-1/2 text-2xl text-purple-500 lg:block"
+                  >
+                    &rarr;
                   </span>
-                  <span className="text-sm leading-relaxed text-navy-200">
-                    {step}
-                  </span>
-                </li>
-              ))}
-            </ol>
-          </div>
-
-          <div className="rounded-2xl border border-navy-900/10 bg-white p-8 sm:p-10">
-            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-purple-600">
-              Carrier Information
-            </span>
-            <h2 className="font-display text-2xl font-semibold text-navy-950">
-              Authority &amp; Insurance
-            </h2>
-            <dl className="mt-6 space-y-4">
-              {carrierInfo.map((item) => (
-                <div
-                  key={item.label}
-                  className="flex items-center justify-between border-b border-navy-900/10 pb-3"
-                >
-                  <dt className="text-sm text-navy-600">{item.label}</dt>
-                  <dd className="text-sm font-semibold text-navy-950">
-                    {item.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+                ) : null}
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
