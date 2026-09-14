@@ -328,7 +328,7 @@ export const teamMembers: TeamMember[] = [
     role: "PRESIDENT & CEO",
     department: "CEO",
     image:
-      "/images/goranvidenov.png",
+      "/images/goran-ceo-photo.png",
     phone: siteConfig.phone,
     extension: "100",
     email: "goran@yopoexpedite.com",
@@ -369,6 +369,8 @@ export const teamMembers: TeamMember[] = [
     name: "Angel Markov",
     role: "Safety Manager",
     department: "Safety & Compliance",
+    image:
+      "/images/angelmarkov.png",
     phone: siteConfig.phone,
     extension: "430",
     email: "angel@yopoexpedite.com",
