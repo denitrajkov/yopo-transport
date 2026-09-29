@@ -299,13 +299,15 @@ export const coreValues: ValueItem[] = [
 export type TeamDepartment =
   | "CEO"
   | "Dispatch"
-  | "Safety & Compliance";
+  | "Safety & Compliance"
+  | "Accounting";
 
 // Display order for team departments on the Team page.
 export const teamDepartments: TeamDepartment[] = [
   "CEO",
-  "Dispatch",
   "Safety & Compliance",
+  "Accounting",
+  "Dispatch",
 ];
 
 export type TeamMember = {
@@ -377,6 +379,15 @@ export const teamMembers: TeamMember[] = [
     email: "angel@yopoexpedite.com",
   },
   {
+    id: "team-15",
+    name: "Marina Ninic",
+    role: "Safety Manager",
+    department: "Safety & Compliance",
+    phone: siteConfig.phone,
+    extension: "222",
+    email: "marina@yopoexpedite.com",
+  },
+  {
     id: "team-13",
     name: "Aleksandar Likarski",
     role: "Safety Coordinator",
@@ -395,6 +406,36 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "120",
     email: "deni@yopoexpedite.com",
+  },
+  {
+    id: "team-16",
+    name: "Atanas Todorov",
+    role: "Safety Coordinator",
+    department: "Safety & Compliance",
+    image:
+      "/images/sas.jpg",
+    phone: siteConfig.phone,
+    extension: "770",
+    email: "sas@yopoexpedite.com",
+  },
+  {
+    id: "team-17",
+    name: "Zlatko Sarafimov",
+    role: "Safety Coordinator",
+    department: "Safety & Compliance",
+    image:
+      "/images/zack.jpg",
+    phone: siteConfig.phone,
+    extension: "790",
+    email: "zack@yopoexpedite.com",
+  },
+  {
+    id: "team-18",
+    name: "Natasha Toneva",
+    role: "Accountant",
+    department: "Accounting",
+    phone: siteConfig.phone,
+    email: "natasha.t@yopoexpedite.com",
   },
 ];
 
