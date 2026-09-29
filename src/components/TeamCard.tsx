@@ -28,7 +28,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
             alt={`Portrait of ${member.name}`}
             fill
             sizes="160px"
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            className={`object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${member.imagePosition ?? "object-center"}`}
           />
         ) : (
           <div

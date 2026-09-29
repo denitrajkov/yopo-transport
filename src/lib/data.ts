@@ -316,6 +316,7 @@ export type TeamMember = {
   role: string;
   department: TeamDepartment;
   image?: string;
+  imagePosition?: string;
   phone: string;
   extension?: string;
   email: string;
@@ -383,6 +384,9 @@ export const teamMembers: TeamMember[] = [
     name: "Marina Ninic",
     role: "Safety Manager",
     department: "Safety & Compliance",
+    image:
+      "/images/ninic.png",
+    imagePosition: "object-[center_15%]",
     phone: siteConfig.phone,
     extension: "222",
     email: "marina@yopoexpedite.com",
