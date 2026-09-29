@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "For Brokers",
   description:
     "Freight broker resources for Yopo Expedite — reliable capacity, responsive dispatch, and a straightforward booking process.",
+  alternates: {
+    canonical: "/for-brokers",
+  },
 };
 
 const iconProps = {

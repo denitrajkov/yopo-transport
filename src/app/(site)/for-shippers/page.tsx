@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "For Shippers",
   description:
     "Freight transportation solutions built for shippers — reliable capacity, real-time visibility, and dedicated support from quote to delivery.",
+  alternates: {
+    canonical: "/for-shippers",
+  },
 };
 
 const iconProps = {

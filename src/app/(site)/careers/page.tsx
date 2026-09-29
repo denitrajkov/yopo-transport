@@ -9,7 +9,10 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Explore open positions at Yopo Expedite and join a team focused on safe, reliable freight transportation across the United States.",
+    "Join a team focused on safe, reliable freight transportation across the United States. Learn about opportunities to drive or work with Yopo Expedite.",
+  alternates: {
+    canonical: "/careers",
+  },
 };
 
 export default function CareersPage() {

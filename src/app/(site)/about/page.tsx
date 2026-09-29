@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Learn about Yopo Expedite's mission, values, and commitment to safe, reliable freight transportation across the United States.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const commitments = [

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Explore Yopo Expedite's freight transportation services, including Full Truckload, Less Than Truckload, regional and long-distance transportation, and logistics solutions.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 export default function ServicesPage() {

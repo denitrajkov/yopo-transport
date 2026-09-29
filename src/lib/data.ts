@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Yopo Expedite",
-  siteUrl: "https://www.yopotransport.com",
+  siteUrl: "https://www.yopoexpedite.com",
   tagline: "Freight Moved With Precision",
   description:
     "Yopo Expedite delivers premium freight transportation and logistics solutions across the United States, built on reliability, safety, and dedicated service.",
@@ -337,6 +337,8 @@ export const teamMembers: TeamMember[] = [
     name: "Antonio Andonov",
     role: "Dispatch Lead",
     department: "Dispatch",
+    image:
+      "/images/antonio.jpg",
     phone: siteConfig.phone,
     extension: "233",
     email: "antonio@yopoexpedite.com",
@@ -346,6 +348,8 @@ export const teamMembers: TeamMember[] = [
     name: "Martin Mitkovski",
     role: "Dispatch Lead",
     department: "Dispatch",
+    image:
+      "/images/matt.jpg",
     phone: siteConfig.phone,
     extension: "210",
     email: "matt@yopoexpedite.com",
@@ -355,6 +359,8 @@ export const teamMembers: TeamMember[] = [
     name: "Larry Rickus",
     role: "General Manager",
     department: "Safety & Compliance",
+    image:
+      "/images/larry.jpg",
     phone: siteConfig.phone,
     extension: "740",
     email: "Larry@yopoexpedite.com",
@@ -365,7 +371,7 @@ export const teamMembers: TeamMember[] = [
     role: "Safety Manager",
     department: "Safety & Compliance",
     image:
-      "/images/angelmarkov.png",
+      "/images/angel.jpg",
     phone: siteConfig.phone,
     extension: "430",
     email: "angel@yopoexpedite.com",
@@ -375,6 +381,8 @@ export const teamMembers: TeamMember[] = [
     name: "Aleksandar Likarski",
     role: "Safety Coordinator",
     department: "Safety & Compliance",
+    image:
+      "/images/ace.jpg",
     phone: siteConfig.phone,
     extension: "560",
     email: "ace@yopoexpedite.com",

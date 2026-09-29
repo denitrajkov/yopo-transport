@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Learn how Yopo Expedite collects, uses, and protects the personal information you share with us.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 const lastUpdated = "September 11, 2026";

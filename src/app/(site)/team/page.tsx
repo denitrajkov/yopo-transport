@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Our Team",
   description:
     "Meet the Yopo Expedite team behind our freight transportation and logistics operations.",
+  alternates: {
+    canonical: "/team",
+  },
 };
 
 export default function TeamPage() {

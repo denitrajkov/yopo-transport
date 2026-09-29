@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Contact & Request a Quote",
   description:
     "Contact Yopo Expedite or request a freight transportation quote. Our team will respond with a custom transportation plan.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const contactDetails = [

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Expert insights, strategies and technology helping modern fleets operate smarter, safer and more efficiently.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogPage() {

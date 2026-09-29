@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Become a Driver",
   description:
     "Apply to drive for Yopo Expedite. Submit your information and CDL to be considered for open driving positions.",
+  alternates: {
+    canonical: "/become-a-driver",
+  },
 };
 
 const highlights = [
