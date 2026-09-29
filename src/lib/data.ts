@@ -382,7 +382,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "team-15",
     name: "Marina Ninic",
-    role: "Safety Manager",
+    role: "Operations Manager",
     department: "Safety & Compliance",
     image:
       "/images/ninic.png",
