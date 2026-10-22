@@ -675,7 +675,9 @@ export const teamMembers: TeamMember[] = [
     id: "team-14",
     name: "Deni Trajkov",
     role: "Safety Coordinator",
-    department: "Safety & Compliance",
+     department: "Safety & Compliance",
+    image:
+      "/images/denitrajkov.png",
     phone: siteConfig.phone,
     extension: "120",
     email: "deni@yopoexpedite.com",
