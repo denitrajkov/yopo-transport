@@ -702,6 +702,7 @@ export const teamMembers: TeamMember[] = [
     role: "Accountant",
     department: "Accounting",
     phone: siteConfig.phone,
+    extension: "700",
     email: "natasha.t@yopoexpedite.com",
   },
   {
