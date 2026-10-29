@@ -704,6 +704,15 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     email: "natasha.t@yopoexpedite.com",
   },
+  {
+    id: "team-181",
+    name: "Pedja Todorovic",
+    role: "Accountant",
+    department: "Accounting",
+    phone: siteConfig.phone,
+    extension: "400",
+    email: "todd@yopoexpedite.com",
+  },
 ];
 
 export const serviceOptions = [
