@@ -617,15 +617,7 @@ export const teamMembers: TeamMember[] = [
     extension: "900",
     email: "bobby@yopoexpedite.com",
   },
-  {
-    id: "team-48",
-    name: "Rubin Jones",
-    role: "Dispatcher",
-    department: "Dispatch",
-    phone: siteConfig.phone,
-    extension: "114",
-    email: "rubin@yopoexpedite.com",
-  },
+  
   {
     id: "team-3",
     name: "Larry Rickus",
