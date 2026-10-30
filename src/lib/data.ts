@@ -565,7 +565,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team-42",
-    name: "Blake Danov",
+    name: "Blake Donev",
     role: "Dispatcher",
     department: "Dispatch",
     phone: siteConfig.phone,
