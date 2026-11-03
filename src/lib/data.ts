@@ -569,7 +569,7 @@ export const teamMembers: TeamMember[] = [
     role: "Dispatcher",
     department: "Dispatch",
     phone: siteConfig.phone,
-    extension: "225",
+    extension: "280 / 900",
     email: "blake@yopoexpedite.com",
   },
   {
@@ -614,7 +614,7 @@ export const teamMembers: TeamMember[] = [
     role: "Dispatcher",
     department: "Dispatch",
     phone: siteConfig.phone,
-    extension: "900",
+    extension: "225 / 900",
     email: "bobby@yopoexpedite.com",
   },
   {
@@ -632,6 +632,7 @@ export const teamMembers: TeamMember[] = [
     role: "Dispatcher",
     department: "Dispatch",
     phone: siteConfig.phone,
+    extension: "129",
     email: "chris@yopoexpedite.com",
   },
   {
@@ -640,6 +641,7 @@ export const teamMembers: TeamMember[] = [
     role: "Dispatcher",
     department: "Dispatch",
     phone: siteConfig.phone,
+    extension: "131",
     email: "liam@yopoexpedite.com",
   },
   
