@@ -8,7 +8,7 @@ export const siteConfig = {
   phone: "+1 708 550 4407",
   email: "safety@yopoexpedite.com",
   careersEmail: "safety@yopoexpedite.com",
-  address: "15131 Kedzie Ave, Markham, IL 60248",
+  address: "15131 Kedzie Ave, Markham, IL 60428",
   hoursShort: "Mon–Fri, 7am–7pm CT",
   mapsUrl:
     "https://www.google.com/maps/place/Yopo+Parking/@41.6175381,-87.6972756,144m/data=!3m1!1e3!4m6!3m5!1s0x880e3dbf8bdc6ec7:0x775e8f41cf3e2f4!8m2!3d41.6177753!4d-87.6977153!16s%2Fg%2F11j2w66lyb?entry=tts&g_ep=EgoyMDI2MDYyOS4wIPu8ASoASAFQAw%3D%3D&skid=cdeb39d0-0356-4b9c-9eed-6e5e0ca3d6d1",
