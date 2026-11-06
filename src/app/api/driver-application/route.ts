@@ -53,7 +53,7 @@ export async function POST(request: Request) {
     }
 
     const { error } = await resend.emails.send({
-      from: "Yopo Expedite <applications@yopotransport.com>",
+      from: "Yopo Expedite <applications@yopoexpedite.com>",
       to: "safety@yopoexpedite.com",
       replyTo: String(formData.get("email") ?? ""),
       subject: `New Driver Application: ${sanitizeHeaderField(firstName)} ${sanitizeHeaderField(lastName)}`,
