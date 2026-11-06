@@ -7,6 +7,7 @@ import {
   siteConfig,
   socialLinks,
 } from "@/lib/data";
+import { CookieSettingsButton } from "@/components/CookieSettingsButton";
 
 const socialIcons: Record<string, React.ReactNode> = {
   Facebook: (
@@ -165,6 +166,7 @@ export function Footer() {
             >
               Privacy Policy
             </Link>
+            <CookieSettingsButton />
             <p>Designed by Yopo Development.</p>
           </div>
         </div>

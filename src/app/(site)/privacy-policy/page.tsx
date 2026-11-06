@@ -32,15 +32,7 @@ export default function PrivacyPolicyPage() {
       <article className="bg-white py-16 sm:py-20">
         <div className="container-page">
           <div className="mx-auto max-w-3xl">
-            <div className="rounded-2xl border border-purple-500/20 bg-purple-50 p-5 text-sm leading-relaxed text-navy-700">
-              This page is a general-purpose privacy policy template provided
-              for convenience. It is not legal advice. Please have it
-              reviewed by a qualified attorney before relying on it, and
-              update the placeholder details below to match your
-              company&apos;s actual data practices.
-            </div>
-
-            <p className="mt-8 text-base leading-relaxed text-navy-700">
+            <p className="text-base leading-relaxed text-navy-700">
               {siteConfig.name} (&quot;we,&quot; &quot;us,&quot; or
               &quot;our&quot;) respects your privacy and is committed to
               protecting the personal information you share with us. This
