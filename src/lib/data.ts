@@ -561,15 +561,6 @@ export const teamMembers: TeamMember[] = [
     email: "miles@yopoexpedite.com",
   },
   {
-    id: "team-42",
-    name: "Blake Donev",
-    role: "Dispatcher",
-    department: "Dispatch",
-    phone: siteConfig.phone,
-    extension: "280 / 900",
-    email: "blake@yopoexpedite.com",
-  },
-  {
     id: "team-43",
     name: "Bob Kolev",
     role: "Dispatcher",
@@ -606,6 +597,15 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "370",
     email: "james@yopoexpedite.com",
+  },  
+  {
+    id: "team-42",
+    name: "Blake Donev",
+    role: "Dispatcher",
+    department: "Dispatch",
+    phone: siteConfig.phone,
+    extension: "280 / 900",
+    email: "blake@yopoexpedite.com",
   },
   {
     id: "team-47",
