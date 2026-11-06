@@ -409,8 +409,9 @@ export const teamMembers: TeamMember[] = [
     name: "Jordan Petrovski",
     role: "Dispatcher",
     department: "Dispatch",
-     image:
+    image:
       "/images/jordan.png",
+    imagePosition: "object-[center_15%]",
     phone: siteConfig.phone,
     email: "jordan@yopoexpedite.com",
   },
@@ -592,8 +593,9 @@ export const teamMembers: TeamMember[] = [
     name: "James Matev",
     role: "Dispatcher",
     department: "Dispatch",
-     image:
+    image:
       "/images/james.png",
+    imagePosition: "object-[center_15%]",
     phone: siteConfig.phone,
     extension: "370",
     email: "james@yopoexpedite.com",
