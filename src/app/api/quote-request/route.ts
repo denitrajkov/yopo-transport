@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { getClientIp, isRateLimited } from "@/lib/rateLimit";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -17,9 +18,25 @@ function escapeHtml(value: FormDataEntryValue | null) {
   );
 }
 
+function sanitizeHeaderField(value: string) {
+  return value.replace(/[\r\n]+/g, " ").trim();
+}
+
 export async function POST(request: Request) {
   try {
+    if (isRateLimited(getClientIp(request))) {
+      return NextResponse.json(
+        { success: false, error: "rate_limited" },
+        { status: 429 },
+      );
+    }
+
     const formData = await request.formData();
+
+    // Honeypot: real visitors never fill this hidden field.
+    if (String(formData.get("website") ?? "").trim() !== "") {
+      return NextResponse.json({ success: true });
+    }
 
     const name = escapeHtml(formData.get("name"));
     const company = escapeHtml(formData.get("company"));
@@ -34,7 +51,7 @@ export async function POST(request: Request) {
       from: "Yopo Expedite <applications@yopotransport.com>",
       to: "safety@yopoexpedite.com",
       replyTo: String(formData.get("email") ?? ""),
-      subject: `New Quote Request: ${name}${company ? ` (${company})` : ""}`,
+      subject: `New Quote Request: ${sanitizeHeaderField(name)}${company ? ` (${sanitizeHeaderField(company)})` : ""}`,
       html: `
         <h2>New Quote Request</h2>
         <p><strong>Name:</strong> ${name}</p>
