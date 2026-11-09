@@ -362,7 +362,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sasha Stanoevski",
     role: "Dispatch Lead",
     department: "Dispatch",
-     image:
+    image:
       "/images/sasha.png",
     phone: siteConfig.phone,
     extension: "315",
@@ -376,7 +376,7 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "440",
     email: "leo@yopoexpedite.com",
-  },  
+  },
   {
     id: "team-31",
     name: "Marcus Todorcev",
@@ -385,7 +385,7 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "295",
     email: "marcus@yopoexpedite.com",
-  },  
+  },
   {
     id: "team-38",
     name: "Zayn Stojanov",
@@ -456,7 +456,7 @@ export const teamMembers: TeamMember[] = [
     name: "Phill Stojanovski",
     role: "Dispatcher",
     department: "Dispatch",
-     image:
+    image:
       "/images/phill.png",
     phone: siteConfig.phone,
     extension: "375",
@@ -562,15 +562,6 @@ export const teamMembers: TeamMember[] = [
     email: "miles@yopoexpedite.com",
   },
   {
-    id: "team-43",
-    name: "Bob Kolev",
-    role: "Dispatcher",
-    department: "Dispatch",
-    phone: siteConfig.phone,
-    extension: "124",
-    email: "bob@yopoexpedite.com",
-  },
-  {
     id: "team-44",
     name: "Bruno",
     role: "Dispatcher",
@@ -599,7 +590,7 @@ export const teamMembers: TeamMember[] = [
     phone: siteConfig.phone,
     extension: "370",
     email: "james@yopoexpedite.com",
-  },  
+  },
   {
     id: "team-42",
     name: "Blake Donev",
@@ -645,7 +636,7 @@ export const teamMembers: TeamMember[] = [
     extension: "131",
     email: "liam@yopoexpedite.com",
   },
-  
+
   {
     id: "team-3",
     name: "Larry Rickus",
@@ -691,11 +682,11 @@ export const teamMembers: TeamMember[] = [
     extension: "560",
     email: "ace@yopoexpedite.com",
   },
-   {
+  {
     id: "team-14",
     name: "Deni Trajkov",
     role: "Safety Coordinator",
-     department: "Safety & Compliance",
+    department: "Safety & Compliance",
     image:
       "/images/denitrajkov.png",
     phone: siteConfig.phone,
