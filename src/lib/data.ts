@@ -610,6 +610,7 @@ export const teamMembers: TeamMember[] = [
     department: "Dispatch",
     image:
       "/images/bobby.png",
+    imagePosition: "object-[center_15%]",
     phone: siteConfig.phone,
     extension: "225 / 900",
     email: "bobby@yopoexpedite.com",
