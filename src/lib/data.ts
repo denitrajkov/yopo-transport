@@ -599,6 +599,8 @@ export const teamMembers: TeamMember[] = [
     name: "Blake Donev",
     role: "Dispatcher",
     department: "Dispatch",
+    image:
+      "/images/bobby.png",
     phone: siteConfig.phone,
     extension: "280 / 900",
     email: "blake@yopoexpedite.com",
