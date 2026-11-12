@@ -5,12 +5,37 @@ import { TeamCard } from "@/components/TeamCard";
 import { CTASection } from "@/components/CTASection";
 import { teamDepartments, teamMembers } from "@/lib/data";
 
+const pageTitle = "Our Team | Yopo Expedite Trucking";
+const pageDescription =
+  "Meet the dispatchers, safety staff, and drivers behind Yopo Expedite — the Chicago-area team that moves your freight safely and on time, every time.";
+
 export const metadata: Metadata = {
-  title: "Our Team",
-  description:
-    "Meet the Yopo Expedite team behind our freight transportation and logistics operations.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/team",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/team",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1774116196662-a9e1e4fa1612?q=80&w=2200&auto=format&fit=crop",
+        alt: "Freight truck silhouetted against mountains at dusk",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [
+      "https://images.unsplash.com/photo-1774116196662-a9e1e4fa1612?q=80&w=2200&auto=format&fit=crop",
+    ],
   },
 };
 

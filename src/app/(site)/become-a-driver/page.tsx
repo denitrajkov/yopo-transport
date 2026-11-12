@@ -2,12 +2,35 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { BecomeDriverForm } from "@/components/BecomeDriverForm";
 
+const pageTitle = "CDL Truck Driver Jobs – Chicago Area | Yopo Expedite";
+const pageDescription =
+  "Now hiring CDL-A truck drivers in the Chicago area. Competitive pay, steady miles, modern equipment, and a safety-first team that has your back. Apply today.";
+
 export const metadata: Metadata = {
-  title: "Become a Driver",
-  description:
-    "Apply to drive for Yopo Expedite. Submit your information and CDL to be considered for open driving positions.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/become-a-driver",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/become-a-driver",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/yopo-truck.png",
+        alt: "Yopo Expedite driver's truck on the road",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/images/yopo-truck.png"],
   },
 };
 
@@ -41,8 +64,8 @@ export default function BecomeADriverPage() {
           </h1>
           <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
             Tell us about yourself and upload your CDL to be considered for
-            our driving positions. Our recruiting team will follow up to
-            discuss next steps.
+            driving positions based out of the Chicago area. Our recruiting
+            team will follow up to discuss next steps.
           </p>
         </div>
       </section>

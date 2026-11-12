@@ -48,8 +48,22 @@ export default async function JobPage({ params }: JobPageProps) {
     `Application: ${job.title}`
   )}`;
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.siteUrl },
+      { "@type": "ListItem", position: 2, name: "Careers", item: `${siteConfig.siteUrl}/careers` },
+      { "@type": "ListItem", position: 3, name: job.title, item: `${siteConfig.siteUrl}/careers/${job.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="bg-navy-50 pb-14 pt-32 sm:pt-36">
         <div className="container-page">
           <nav aria-label="Breadcrumb" className="text-xs text-navy-500">

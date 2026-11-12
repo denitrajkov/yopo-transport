@@ -8,12 +8,35 @@ import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { CTASection } from "@/components/CTASection";
 import { services, testimonials } from "@/lib/data";
 
+const pageTitle = "Reliable Freight Carrier for Shippers | Yopo Expedite";
+const pageDescription =
+  "Ship with a carrier you can trust. Yopo Expedite offers dependable capacity, real-time updates, and safe freight transportation from the Chicago area nationwide.";
+
 export const metadata: Metadata = {
-  title: "For Shippers",
-  description:
-    "Freight transportation solutions built for shippers — reliable capacity, real-time visibility, and dedicated support from quote to delivery.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/for-shippers",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/for-shippers",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/truck-shipers.png",
+        alt: "Warehouse racking staged with freight ready for shipment",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/images/truck-shipers.png"],
   },
 };
 

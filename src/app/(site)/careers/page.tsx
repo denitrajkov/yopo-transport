@@ -6,12 +6,37 @@ import { JobCard } from "@/components/careers/JobCard";
 import { getAllJobs } from "@/lib/careers";
 import { siteConfig } from "@/lib/data";
 
+const pageTitle = "Trucking Careers in Chicago, IL | Yopo Expedite";
+const pageDescription =
+  "Explore driver, dispatch, and office careers at Yopo Expedite in Markham, IL. Join a growing Chicago-area transportation company built on trust and safety.";
+
 export const metadata: Metadata = {
-  title: "Careers",
-  description:
-    "Join a team focused on safe, reliable freight transportation across the United States. Learn about opportunities to drive or work with Yopo Expedite.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/careers",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/careers",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1666173114990-3b1a531ef82f?q=80&w=2200&auto=format&fit=crop",
+        alt: "Fleet of trucks lined up in a company lot",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [
+      "https://images.unsplash.com/photo-1666173114990-3b1a531ef82f?q=80&w=2200&auto=format&fit=crop",
+    ],
   },
 };
 

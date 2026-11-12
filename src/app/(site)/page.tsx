@@ -41,10 +41,10 @@ export default function HomePage() {
               Freight Moved With Precision, Across the Country
             </h1>
             <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-navy-100/85 sm:text-lg">
-              Yopo Expedite delivers dependable freight transportation and
-              logistics solutions for businesses that need their shipments
-              handled with care, communicated clearly, and delivered on
-              schedule.
+              Based in the Chicago area, Yopo Expedite delivers dependable
+              freight transportation and logistics solutions for businesses
+              that need their shipments handled with care, communicated
+              clearly, and delivered on schedule.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button href="/contact" variant="primary">

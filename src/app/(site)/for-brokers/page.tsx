@@ -5,12 +5,35 @@ import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/lib/data";
 
+const pageTitle = "Trusted Carrier Partner for Freight Brokers | Yopo Expedite";
+const pageDescription =
+  "Freight brokers rely on Yopo Expedite for consistent capacity, clear communication, and on-time delivery — with cross-dock support in Markham, IL and Waterloo, IA.";
+
 export const metadata: Metadata = {
-  title: "For Brokers",
-  description:
-    "Freight broker resources for Yopo Expedite — reliable capacity, responsive dispatch, and a straightforward booking process.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/for-brokers",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/for-brokers",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/for-brokers.png",
+        alt: "Aerial view of a freight truck on a highway between fields",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/images/for-brokers.png"],
   },
 };
 
@@ -157,9 +180,9 @@ const capabilities: Capability[] = [
     ),
   },
   {
-    title: "Cross-Dock Services",
+    title: "Cross-Dock Services in Illinois & Iowa",
     description:
-      "We offer convenient cross-dock solutions through our facilities in Markham, Illinois and Waterloo, Iowa. Our cross-dock locations help customers efficiently transfer, consolidate, and redistribute freight while reducing handling time and keeping shipments moving.",
+      "Our headquarters in Markham, Illinois and cross-dock facility in Waterloo, Iowa help customers efficiently transfer, consolidate, and redistribute freight while reducing handling time and keeping shipments moving.",
     icon: (
       <svg {...iconProps}>
         <path

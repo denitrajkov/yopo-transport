@@ -10,8 +10,11 @@ export function GoogleAnalytics() {
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
+    // One-time read of localStorage on mount — can't be a lazy useState
+    // initializer since localStorage isn't available during SSR.
     try {
       if (localStorage.getItem(COOKIE_CONSENT_KEY) === "accepted") {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setEnabled(true);
       }
     } catch {

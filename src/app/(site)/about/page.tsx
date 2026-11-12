@@ -5,12 +5,35 @@ import { CTASection } from "@/components/CTASection";
 import { CoreValuesCarousel } from "@/components/CoreValuesCarousel";
 import { coreValues } from "@/lib/data";
 
+const pageTitle = "About Yopo Expedite | Chicago-Area Trucking Company";
+const pageDescription =
+  "Yopo Expedite is a Markham, IL trucking company delivering safe, reliable freight across the US. Learn about our team, values, and commitment to service.";
+
 export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Learn about Yopo Expedite's mission, values, and commitment to safe, reliable freight transportation across the United States.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/about",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/about",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/trucks.png",
+        alt: "Fleet of Yopo Expedite trucks parked at the distribution yard",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/images/trucks.png"],
   },
 };
 
@@ -67,10 +90,10 @@ export default function AboutPage() {
             />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-navy-700">
               <p>
-                Yopo Expedite was founded on a simple belief: shipping freight
-                shouldn&rsquo;t mean losing visibility, sacrificing
-                communication, or wondering whether your delivery will actually
-                arrive on time.
+                Based in Markham, Illinois, Yopo Expedite was founded on a
+                simple belief: shipping freight shouldn&rsquo;t mean losing
+                visibility, sacrificing communication, or wondering whether
+                your delivery will actually arrive on time.
               </p>
               <p>
                 We set out to build a transportation company that treats every

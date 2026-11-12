@@ -6,12 +6,37 @@ import { ProcessSteps } from "@/components/ProcessSteps";
 import { CTASection } from "@/components/CTASection";
 import { services } from "@/lib/data";
 
+const pageTitle = "FTL, LTL & Expedited Freight Services | Yopo Expedite";
+const pageDescription =
+  "Full truckload, LTL, and expedited freight services from a Chicago-area carrier. Reliable, safe, on-time transportation across the United States.";
+
 export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "Explore Yopo Expedite's freight transportation services, including Full Truckload, Less Than Truckload, regional and long-distance transportation, and logistics solutions.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
     canonical: "/services",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/services",
+    siteName: "Yopo Expedite",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2200&auto=format&fit=crop",
+        alt: "Aerial view of shipping containers at a logistics port",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2200&auto=format&fit=crop",
+    ],
   },
 };
 

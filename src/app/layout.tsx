@@ -62,16 +62,29 @@ export const metadata: Metadata = {
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "LocalBusiness"],
   name: siteConfig.name,
   url: siteConfig.siteUrl,
   logo: `${siteConfig.siteUrl}/images/yopo-logo.png`,
+  image: `${siteConfig.siteUrl}/images/yopo-logo.png`,
   telephone: siteConfig.phone,
   email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
-    streetAddress: siteConfig.address,
+    streetAddress: "15131 Kedzie Ave",
+    addressLocality: "Markham",
+    addressRegion: "IL",
+    postalCode: "60428",
+    addressCountry: "US",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 41.604,
+    longitude: -87.6942,
+  },
+  areaServed: "United States",
+  // TODO(goran): add `openingHours` here once official business hours are
+  // finalized for public display (e.g. ["Mo-Fr 07:00-19:00"]).
   sameAs: socialLinks
     .filter((link) => link.href.startsWith("http"))
     .map((link) => link.href),
