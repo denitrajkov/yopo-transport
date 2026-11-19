@@ -1,5 +1,3 @@
-import { siteConfig } from "@/lib/data";
-
 /**
  * Driver chatbot FAQ.
  *
@@ -67,12 +65,6 @@ export const chatFaqs: ChatFaq[] = [
     answer:
       "It takes about 2 minutes: fill out the short form and upload a photo of your CDL. Our recruiting team will contact you about next steps.",
     keywords: ["apply", "application", "sign up", "join", "start", "hire", "hiring", "job"],
-  },
-  {
-    id: "contact",
-    question: "Talk to a recruiter",
-    answer: `You can call us at ${siteConfig.phone}, or leave your name and phone number here and a recruiter will reach out to you.`,
-    keywords: ["call", "phone", "talk", "recruiter", "contact", "human", "person", "speak", "number"],
   },
 ];
 

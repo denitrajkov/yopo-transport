@@ -68,12 +68,7 @@ export function DriverChatbot() {
     const faq = chatFaqs.find((item) => item.id === id);
     if (!faq) return;
     addMessages({ from: "user", text: faq.question }, { from: "bot", text: faq.answer });
-    if (faq.id === "contact") {
-      setPendingQuestion("");
-      setMode("lead");
-    } else {
-      setMode("followup");
-    }
+    setMode("followup");
   }
 
   function handleTyped(event: FormEvent<HTMLFormElement>) {
@@ -85,12 +80,7 @@ export function DriverChatbot() {
     const faq = matchFaq(text);
     if (faq) {
       addMessages({ from: "user", text }, { from: "bot", text: faq.answer });
-      if (faq.id === "contact") {
-        setPendingQuestion(text);
-        setMode("lead");
-      } else {
-        setMode("followup");
-      }
+      setMode("followup");
     } else {
       addMessages({ from: "user", text }, { from: "bot", text: NO_MATCH });
       setPendingQuestion(text);
