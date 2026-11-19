@@ -6,7 +6,16 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/"],
+      // /api/ is the site's own form endpoints; the rest are leftover
+      // WordPress paths from the old site.
+      disallow: [
+        "/api/",
+        "/wp-admin/",
+        "/wp-includes/",
+        "/wp-content/",
+        "/feed/",
+        "/*/feed/",
+      ],
     },
     sitemap: `${siteConfig.siteUrl}/sitemap.xml`,
   };

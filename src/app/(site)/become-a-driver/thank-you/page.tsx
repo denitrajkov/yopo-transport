@@ -3,6 +3,10 @@ import { ThankYou } from "@/components/ThankYou";
 
 export const metadata: Metadata = {
   title: "Application Received",
+  // Post-submit confirmation page: own canonical (instead of inheriting "/")
+  // and kept out of search results on purpose.
+  alternates: { canonical: "/become-a-driver/thank-you" },
+  robots: { index: false, follow: true },
 };
 
 export default function DriverThankYouPage() {
